@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         Ringtone r = RingtoneManager.getRingtone(context.getApplicationContext(), notification);
         r.play();
     }
-    public void Notidestroy(String text){ //destroy notification
+    public void Notidestroy(){ //destroy notification
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         nm.cancelAll();
         Context context = getApplicationContext();
@@ -112,10 +112,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             float y=event.values[1];
             float z=event.values[2];
             float speed = Math.abs(x + y + z - last_x - last_y - last_z);
-            if (speed > (Settings.acceleration_value + 5 )) {  //min seekbar value = 0
+            if (speed > Settings.acceleration_value) {
                 Notitriggered("Acceleration too high");
             }
-            else Notidestroy("No more danger");
+            else Notidestroy();
             last_x = x;
             last_y = y;
             last_z = z;
@@ -125,14 +125,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             if (event.values[0] == 0){
                 Notitriggered("Object close");
             }
-            else Notidestroy("No more danger");
+            else Notidestroy();
         }
         if(event.sensor.getType()==Sensor.TYPE_LIGHT){
             light.setText("Lighting:\n" + event.values[0] + " lx");
-                if (event.values[0] < (Settings.light_value + 2)) { //min seekbar value = 0
+                if (event.values[0] < Settings.light_value) {
                     Notitriggered("Lighting too low");
                 }
-                else Notidestroy("No more danger");
+                else Notidestroy();
         }
     }
 

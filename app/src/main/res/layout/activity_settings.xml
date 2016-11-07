@@ -15,7 +15,7 @@
         android:layout_marginBottom="108dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:max="98" />
+        android:max="100" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -90,14 +90,14 @@
         android:secondaryProgress="20"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:max="48"
+        android:max="50"
         android:layout_marginTop="17dp"
         style="@android:style/Widget.Material.Light.SeekBar"
         android:layout_below="@+id/textView6"
         android:layout_alignStart="@+id/seekBarL" />
 
     <TextView
-        android:text="TextView"
+        android:text="Threshold: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"

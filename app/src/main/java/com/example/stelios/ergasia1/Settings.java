@@ -23,11 +23,13 @@ public class Settings extends AppCompatActivity {
         mSeekBarL = (SeekBar)findViewById(R.id.seekBarL);
         mSeekBarA = (SeekBar)findViewById(R.id.seekBarA);
         mSeekBarP = (SeekBar)findViewById(R.id.seekBarP);
+        mSeekBarA.setProgress(acceleration_value); textA.setText("Threshold: " + acceleration_value); //initialization
+        mSeekBarL.setProgress(light_value); textL.setText("Threshold: " + light_value);
         mSeekBarL.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 light_value=progress;
-                textL.setText("Threshold: " + (seekBar.getProgress()+2));
+                textL.setText("Threshold: " + seekBar.getProgress());
             }
 
             @Override
@@ -44,7 +46,7 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 acceleration_value=progress;
-                textA.setText("Threshold: " + (seekBar.getProgress()+2));
+                textA.setText("Threshold: " + seekBar.getProgress());
             }
 
             @Override

@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="armeabi-v7a,armeabi"
     api-level="23"
-    density="420dpi"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="28447670540750"
-    token="4736294344673225828"
+    timestamp="5719359285038"
+    token="-580253436926217156"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="804" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="216" />
+        duration="0" />
     <task
         name="verifier"
-        duration="7" />
+        duration="0" />
 
     <artifact
-        location="/home/wallflower/AndroidStudioProjects/Ergasia1/app/build/outputs/apk/app-debug.apk"
+        location="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="28447670540750"
+        timestamp="5719359285038"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/wallflower/AndroidStudioProjects/Ergasia1/app/build/outputs/apk/app-debug.apk"
+            location="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 
