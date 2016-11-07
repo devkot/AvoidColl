@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+ <ListPreference
+     android:key="list_preference"
+     android:title="Accelerometer"
+     android:summary="Select accelerometer sensitivity"
+     android:entries="@array/listArray"
+     android:defaultValue="@string/pref_default_display_name"
+     android:entryValues="@array/listValues"/>
 
+ <ListPreference
+     android:key="list_preference"
+     android:title="Light sensor"
+     android:summary="Select light sensor sensitivity"
+     android:entries="@array/listArray2"
+     android:entryValues="@array/listValues"
+  />
 
 </PreferenceScreen>

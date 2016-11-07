@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="listArray">
+    <item>Slow</item>
+    <item>Default</item>
+    <item>Fast</item>
+</string-array>
+
+<string-array name="listValues">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+</string-array>
+
+<string-array name="listArray2">
+    <item>Sensitive</item>
+    <item>Default</item>
+    <item>Less Sensitive</item>
+</string-array>
+</resources>

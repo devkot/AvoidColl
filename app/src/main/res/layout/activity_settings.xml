@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F5" >
+
+    <SeekBar
+        android:id="@+id/seekBarL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progress="1"
+        android:secondaryProgress="20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="108dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:max="98" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/seekBarL"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Light Threshold"
+            android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:text="Threshold: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewA"
+            android:layout_alignEnd="@+id/seekBarA"
+            android:id="@+id/textView5" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Acceleration Threshold"
+        android:id="@+id/textViewA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Proximity Threshold"
+        android:id="@+id/textViewP"
+        android:layout_below="@+id/textViewA"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="83dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <SeekBar
+        android:id="@+id/seekBarP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progress="1"
+        android:secondaryProgress="20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textViewP"
+        android:layout_alignEnd="@+id/seekBarA" />
+
+    <SeekBar
+        android:id="@+id/seekBarA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progress="1"
+        android:secondaryProgress="20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="48"
+        android:layout_marginTop="17dp"
+        style="@android:style/Widget.Material.Light.SeekBar"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/seekBarL" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textViewA"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textViewP"
+        android:layout_alignStart="@+id/seekBarP"
+        android:layout_marginTop="12dp" />
+
+
+</RelativeLayout>

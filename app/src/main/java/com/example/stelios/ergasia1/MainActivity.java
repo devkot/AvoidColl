@@ -12,7 +12,6 @@ import android.hardware.SensorEvent;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.hardware.SensorManager;
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Sensor mProximity;
     private Sensor mLight;
     private float last_x = 0, last_y = 0, last_z = 0;
-    public int SHAKE_THRESHOLD = 10;
     TextView acceleration;
     TextView distance;
     TextView light;
@@ -48,13 +46,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         acceleration = (TextView)findViewById(R.id.acceleration);
         distance = (TextView)findViewById(R.id.distance);
         light = (TextView)findViewById(R.id.light);
-        PreferenceManager.setDefaultValues(this, R.xml.preference, false);  //default values
         notification = new NotificationCompat.Builder(this);
         notification.setAutoCancel(true); //deletes notification on main app screen
         if (!isTaskRoot()) { //prevent additional tasks from opening on intent click
             finish();
             return;
         }
+
     }
     public void Notitriggered(String text){                       //create notification
         notification.setSmallIcon(R.drawable.ic_notifications_black_24dp);
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         notification.setWhen(System.currentTimeMillis());
         notification.setContentTitle("Collision Danger");
         notification.setContentText(text);
-        notification.setDefaults(Notification.DEFAULT_ALL); //vibrate
+        notification.setDefaults(Notification.DEFAULT_VIBRATE); //vibrate
         notification.setPriority(NotificationCompat.PRIORITY_MAX);
 
         Intent intent = new Intent(this, MainActivity.class);
@@ -94,9 +92,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case R.id.action_settings:
-                getFragmentManager().beginTransaction()
-                        .replace(android.R.id.content, new SettingsFragment())
-                        .commit();
+                Intent intent = new Intent(this, Settings.class);
+                this.startActivity(intent);
                 break;
             case R.id.exit:
                 onStop();
@@ -106,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         return false;
     }
 
+
     @Override
     public void onSensorChanged(SensorEvent event) {
         if (event.sensor.getType()==Sensor.TYPE_LINEAR_ACCELERATION){   //linear acceleration used to filter out gravity
@@ -114,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             float y=event.values[1];
             float z=event.values[2];
             float speed = Math.abs(x + y + z - last_x - last_y - last_z);
-            if (speed > SHAKE_THRESHOLD) {
+            if (speed > (Settings.acceleration_value + 5 )) {  //min seekbar value = 0
                 Notitriggered("Acceleration too high");
             }
             else Notidestroy("No more danger");
@@ -131,15 +129,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         if(event.sensor.getType()==Sensor.TYPE_LIGHT){
             light.setText("Lighting:\n" + event.values[0] + " lx");
-                if (event.values[0] < 40) {
+                if (event.values[0] < (Settings.light_value + 2)) { //min seekbar value = 0
                     Notitriggered("Lighting too low");
                 }
                 else Notidestroy("No more danger");
         }
     }
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
+
     @Override
     protected void onPause() {
         super.onPause();

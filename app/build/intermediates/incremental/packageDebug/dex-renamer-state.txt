@@ -1,4 +1,7 @@
-#Mon Oct 31 13:22:58 EET 2016
-base.0=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Mon Nov 07 13:25:33 EET 2016
+base.0=/home/wallflower/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_660b2b15e9058e3a2436dd9f9e286d0061b8fd8a
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.1=/home/wallflower/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7718a99c48d4108a5d0a2170d99ca2abd01b7c07/classes.dex
+base.1=/home/wallflower/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7718a99c48d4108a5d0a2170d99ca2abd01b7c07
+file.0=/home/wallflower/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_660b2b15e9058e3a2436dd9f9e286d0061b8fd8a/classes.dex
