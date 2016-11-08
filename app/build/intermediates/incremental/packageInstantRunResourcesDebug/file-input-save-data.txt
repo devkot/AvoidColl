@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Nov 08 19:44:49 EET 2016
+#Tue Nov 08 20:09:26 EET 2016
 175.set=ANDROID_RESOURCE
 122.file=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_material_light.xml
 60.set=ANDROID_RESOURCE

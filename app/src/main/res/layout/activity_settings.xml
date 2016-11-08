@@ -50,7 +50,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:layout_below="@+id/seekBarA"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"/>
 
     <TextView
         android:text="Threshold: "
@@ -69,7 +70,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp" />
+        android:layout_marginTop="13dp"
+        android:textSize="20dp"/>
 
     <SeekBar
         android:id="@+id/seekBarL"

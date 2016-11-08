@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Nov 08 19:45:06 EET 2016
+#Tue Nov 08 20:03:03 EET 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_screen_simple_overlay_action_mode.xml

@@ -1,4 +1,4 @@
-#Tue Nov 08 19:45:05 EET 2016
+#Tue Nov 08 20:03:03 EET 2016
 base.0=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_de3e5cfc04570629bd87998b8059b0f810c82e69
 renamed.1=classes2.dex
 renamed.0=classes.dex
