@@ -1,7 +1,7 @@
-#Mon Nov 07 14:07:58 EET 2016
-base.0=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_de3e5cfc04570629bd87998b8059b0f810c82e69
+#Mon Nov 07 21:27:24 EET 2016
+base.0=H\:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d3392c083ffa86f190b4f80eb1904b4855b05c7e
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_432e56db34c9d8acec6765a6a7b54ef7226f3250/classes.dex
-base.1=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_432e56db34c9d8acec6765a6a7b54ef7226f3250
-file.0=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_de3e5cfc04570629bd87998b8059b0f810c82e69/classes.dex
+file.1=H\:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c3fbfbc41672f7ec205240bb3637bd32fbe159b3\\classes.dex
+base.1=H\:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c3fbfbc41672f7ec205240bb3637bd32fbe159b3
+file.0=H\:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d3392c083ffa86f190b4f80eb1904b4855b05c7e\\classes.dex

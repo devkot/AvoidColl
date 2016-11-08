@@ -6,11 +6,11 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 
-public class Settings extends AppCompatActivity {
-    SeekBar mSeekBarL, mSeekBarA, mSeekBarP;
-    static int light_value=40, acceleration_value=10, proximity_value;
-    TextView textL,textA,textP;
-
+public class Settings extends AppCompatActivity {  //seekbar settings
+    SeekBar mSeekBarL, mSeekBarA;
+    static int light_value=40, acceleration_value=10;
+    TextView textL,textA;
+  //  Proximity sensor is interrupt-based (not Poll-based), cant be changed
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +19,11 @@ public class Settings extends AppCompatActivity {
 
         textL=(TextView)findViewById(R.id.textView5);
         textA=(TextView)findViewById(R.id.textView6);
-        textP=(TextView)findViewById(R.id.textView7);
         mSeekBarL = (SeekBar)findViewById(R.id.seekBarL);
         mSeekBarA = (SeekBar)findViewById(R.id.seekBarA);
-        mSeekBarP = (SeekBar)findViewById(R.id.seekBarP);
-        mSeekBarA.setProgress(acceleration_value); textA.setText("Threshold: " + acceleration_value); //initialization
+        mSeekBarA.setProgress(acceleration_value); textA.setText("Threshold: " + acceleration_value);
         mSeekBarL.setProgress(light_value); textL.setText("Threshold: " + light_value);
-        mSeekBarL.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        mSeekBarL.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {   //light sensor seekbar
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 light_value=progress;
@@ -42,7 +40,7 @@ public class Settings extends AppCompatActivity {
             }
         });
 
-        mSeekBarA.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        mSeekBarA.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {  //accelerometer
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 acceleration_value=progress;
@@ -58,21 +56,6 @@ public class Settings extends AppCompatActivity {
             }
         });
 
-        mSeekBarP.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                proximity_value=progress;
-                textP.setText("Threshold: " + seekBar.getProgress());
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
-        });
 
 }
 }

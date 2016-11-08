@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/action_settings"
+    <item android:id="@+id/action_settings"
     android:title="Settings"
 
     />
+    <item android:id="@+id/delay_settings"
+        android:title="Sensor delay settings"
+        />
 
-<item android:id="@+id/exit"
+    <item android:id="@+id/exit"
     android:title="Quit Application"
     />
 </menu>

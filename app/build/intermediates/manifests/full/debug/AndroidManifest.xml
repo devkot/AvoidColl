@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.stelios.ergasia1.Settings" />
+        <activity android:name="com.example.stelios.ergasia1.DelaySettings" />
     </application>
 
 </manifest>

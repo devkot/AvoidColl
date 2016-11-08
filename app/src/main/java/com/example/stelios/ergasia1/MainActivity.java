@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         notification.setAutoCancel(true); //deletes notification on main app screen
         if (!isTaskRoot()) { //prevent additional tasks from opening on intent click
             finish();
-            return;
         }
 
     }
@@ -78,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         Ringtone r = RingtoneManager.getRingtone(context.getApplicationContext(), notification);
         r.stop();
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -91,6 +91,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 Intent intent = new Intent(this, Settings.class);
                 this.startActivity(intent);
                 break;
+            case R.id.delay_settings:
+                Intent intent1 = new Intent(this, DelaySettings.class);
+                this.startActivity(intent1);
+                break;
             case R.id.exit:
                 onStop();
                 System.exit(0);
@@ -98,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         return false;
     }
+
 
     @Override
     public void onSensorChanged(SensorEvent event) {
@@ -107,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             float y=event.values[1];
             float z=event.values[2];
             float speed = Math.abs(x + y + z - last_x - last_y - last_z);
-            if (speed > Settings.acceleration_value) {
+            if (speed > Settings.acceleration_value ) {
                 Notitriggered("Acceleration too high");
             }
             else Notidestroy();
@@ -144,8 +149,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected void onResume() {
         super.onResume();
         mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
-        mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL);
         mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL);
     }
     @Override
     public void onBackPressed() {
