@@ -24,13 +24,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener{
     private SensorManager mSensorManager;
-    private Sensor mSpeed;
-    private Sensor mProximity;
-    private Sensor mLight;
+    private Sensor mSpeed, mProximity, mLight;
     private float last_x = 0, last_y = 0, last_z = 0;
-    TextView acceleration;
-    TextView distance;
-    TextView light;
+    TextView acceleration, distance, light;
     NotificationCompat.Builder notification;
     private static final int id = 1;
 
@@ -102,7 +98,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         return false;
     }
-
 
     @Override
     public void onSensorChanged(SensorEvent event) {

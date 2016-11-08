@@ -1,10 +1,6 @@
 [
     {
-        "merged": "H:\\AS_Projects\\update4\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "H:\\AS_Projects\\update4\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "H:\\home\\stelios\\AndroidStudioProjects\\Ergasia1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "H:\\home\\stelios\\AndroidStudioProjects\\Ergasia1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/stelios/AndroidStudioProjects/Ergasia1/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
 ]

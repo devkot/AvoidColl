@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 07 13:34:51 EET 2016
+#Mon Nov 07 14:07:58 EET 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png
