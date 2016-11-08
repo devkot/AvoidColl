@@ -18,25 +18,5 @@
     {
         "merged": "/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/res/merged/debug/xml/pref_general.xml",
         "source": "/home/stelios/AndroidStudioProjects/Ergasia1/app/src/main/res/xml/pref_general.xml"
-    },
-    {
-        "merged": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preference.xml",
-        "source": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\src\\main\\res\\xml\\preference.xml"
-    },
-    {
-        "merged": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_general.xml",
-        "source": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\src\\main\\res\\xml\\pref_general.xml"
-    },
-    {
-        "merged": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_notification.xml",
-        "source": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\src\\main\\res\\xml\\pref_notification.xml"
-    },
-    {
-        "merged": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_data_sync.xml",
-        "source": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\src\\main\\res\\xml\\pref_data_sync.xml"
-    },
-    {
-        "merged": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_headers.xml",
-        "source": "/home/stelios/AndroidStudioProjects/Ergasia1/H:\\AS_Projects\\Ergasia1\\app\\src\\main\\res\\xml\\pref_headers.xml"
     }
 ]

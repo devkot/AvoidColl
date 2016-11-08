@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="cff408fdc5782e0be54e7153cb2cbb20241b9123">
+        sha1="7a1af2230556d88ac9fc48281c9c725198c43875">
         <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_de3e5cfc04570629bd87998b8059b0f810c82e69/classes.dex" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="0ca16822f011df83d53041016169b0e7d5cc17a5">
+        sha1="4618cc2aa96dcf0db7efeb8af5a5bfe4302355ac">
         <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_432e56db34c9d8acec6765a6a7b54ef7226f3250/classes.dex" />
     </item>
 

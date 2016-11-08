@@ -148,12 +148,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onResume() {
         super.onResume();
-        switch(DelaySettings.value){
+        switch(DelaySettings.value){ //switch for acceleration delay
             case 0:
-                mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_FASTEST);
+                mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_FASTEST);  // 0 delay
                 break;
             case 1:
-                mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
+                mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
                 break;
             case 2:
                 mSensorManager.registerListener(this, mSpeed, 1000000);  //once per second (in microseconds)
@@ -162,9 +162,36 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 mSensorManager.registerListener(this, mSpeed, 5000000);  //once per 5 seconds (in microseconds)
                 break;
         }
-     //   mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
-        mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL);
-        mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL);
+        switch(DelaySettings.valuep){ //switch statement for proximity sensor delay
+            case 0:
+                mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_FASTEST); // 0 delay
+                break;
+            case 1:
+                mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
+                break;
+            case 2:
+                mSensorManager.registerListener(this, mProximity, 1000000);
+                break;
+            case 3:
+                mSensorManager.registerListener(this, mProximity, 5000000);
+                break;
+        }
+        switch(DelaySettings.valuel){ //switch statement for light sensor delay
+            case 0:
+                mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_FASTEST); // 0 delay
+                break;
+            case 1:
+                mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
+                break;
+            case 2:
+                mSensorManager.registerListener(this, mLight, 1000000);
+                break;
+            case 3:
+                mSensorManager.registerListener(this, mLight, 5000000);
+                break;
+        }
+
+
     }
     @Override
     public void onBackPressed() {
