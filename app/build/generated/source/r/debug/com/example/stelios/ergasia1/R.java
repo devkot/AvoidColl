@@ -1957,7 +1957,8 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f040027;
         public static final int select_dialog_multichoice_material=0x7f040028;
         public static final int select_dialog_singlechoice_material=0x7f040029;
-        public static final int support_simple_spinner_dropdown_item=0x7f04002a;
+        public static final int settings=0x7f04002a;
+        public static final int support_simple_spinner_dropdown_item=0x7f04002b;
     }
     public static final class menu {
         public static final int option_menu=0x7f0f0000;

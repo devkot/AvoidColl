@@ -148,7 +148,21 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onResume() {
         super.onResume();
-        mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
+        switch(DelaySettings.value){
+            case 0:
+                mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_FASTEST);
+                break;
+            case 1:
+                mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
+                break;
+            case 2:
+                mSensorManager.registerListener(this, mSpeed, 1000000);  //once per second (in microseconds)
+                break;
+            case 3:
+                mSensorManager.registerListener(this, mSpeed, 5000000);  //once per 5 seconds (in microseconds)
+                break;
+        }
+     //   mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
         mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL);
         mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL);
     }

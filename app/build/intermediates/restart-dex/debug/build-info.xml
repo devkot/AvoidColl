@@ -5,32 +5,32 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="15093336620787"
+    timestamp="2684580187913"
     token="-3192424786584697636"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="498" />
+        duration="1705" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="21" />
+        duration="558" />
     <task
         name="verifier"
-        duration="1" />
+        duration="14" />
 
     <artifact
-        location="H:\AS_Projects\Ergasia1\app\build\outputs\apk\app-debug.apk"
+        location="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
         timestamp="15093336620787"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="H:\AS_Projects\Ergasia1\app\build\outputs\apk\app-debug.apk"
+            location="/home/stelios/AndroidStudioProjects/Ergasia1/H:\AS_Projects\Ergasia1\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 

@@ -11,7 +11,9 @@ import android.os.Bundle;
 public class DelaySettings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     TextView textView1;
     Spinner spinnerA;
-    String paths[] = {"Ultra","Fast","Normal","Slow","Very Slow"};
+    String paths[] = {"Ultra","Fast","Normal","Slow"};
+    static int value=3;
+
 
 
     @Override
@@ -22,15 +24,17 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
         textView1=(TextView)findViewById(R.id.textView1);
         textView1.setText("Accelerometer delay preferences");
 
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(DelaySettings.this, android.R.layout.simple_spinner_item, paths);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<>(DelaySettings.this, android.R.layout.simple_spinner_item, paths);
         spinnerA = (Spinner)findViewById(R.id.spinnerA);
         spinnerA.setAdapter(adapter1);
         spinnerA.setOnItemSelectedListener(this);
+        spinnerA.setSelection(value);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String value = parent.getItemAtPosition(position).toString();
+        value = spinnerA.getSelectedItemPosition();
+
     }
 
     @Override

@@ -658,7 +658,8 @@ int layout notification_template_part_time 0x7f040026
 int layout select_dialog_item_material 0x7f040027
 int layout select_dialog_multichoice_material 0x7f040028
 int layout select_dialog_singlechoice_material 0x7f040029
-int layout support_simple_spinner_dropdown_item 0x7f04002a
+int layout settings 0x7f04002a
+int layout support_simple_spinner_dropdown_item 0x7f04002b
 int menu option_menu 0x7f0f0000
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f070000
