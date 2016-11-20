@@ -5,40 +5,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="9560600187668"
-    token="-580253436926217156"
-    verifier="COMPATIBLE" >
+    timestamp="14219692070051"
+    token="9129204485444715762"
+    verifier="FIELD_ADDED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="122" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="36" />
     <task
         name="verifier"
-        duration="0" />
+        duration="6" />
 
     <artifact
-        location="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="9177754097733"
+        timestamp="13934124899817"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/outputs/apk/app-debug.apk"
+            location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="9560600187668"
-        verifier="COMPATIBLE" >
+        timestamp="14219692070051"
+        verifier="FIELD_ADDED" >
         <artifact
-            location="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
+            location="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

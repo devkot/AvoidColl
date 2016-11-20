@@ -3,156 +3,156 @@
 
     <item
         is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e9c2597e7a4c1affd5b70517388d99e1d0412889/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_66769bfec14b8ec8ad6812a2dee0432871ca7229/classes.dex" />
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f5fa72eea41c5423240355e83d7441c113c85f41\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_5b6a58d8a4c2fc9273cb92c30452fb847c087e18/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_7c53f2c5104ddff38acf1eb98188f0ba4e559192/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_ef2a8b5705fa7cae16f68ecbeb3f9ecab314b3e8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_5b1494d32a828ad276fb172d794420cf9823ddb8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_b72697b3e2a46a2e21d9d68c7bb22b38e62053ce/classes.dex" />
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_509ca97bd5b2d8f91f2d1ea5d194cfa2428dd92a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_00101866a1f1caceab4c1ccab69d2f4652a43211/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_63e03cff8020d2e062f145e19dd5afc59299d4a0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_624b6bdda9838f5a94280a21836f38d431f78502/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_eb1a32bd052de29e69734dae6bb26deac14269b7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7a1af2230556d88ac9fc48281c9c725198c43875">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_de3e5cfc04570629bd87998b8059b0f810c82e69/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_4ccbd8af4a9c354cad6b77fcef5e7c7557f4701e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_6b36fc2a613667689e17da913d25ccbe9fd62001/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ea2d7a43b9c16e34b057dc33a6c2067e9e814888/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_8ff45678e63aea2cbd7f958cbe617bc004098822/classes.dex" />
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_da5d356ac144583195a3d831a809634d950ed671\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="4618cc2aa96dcf0db7efeb8af5a5bfe4302355ac">
-        <dex dex="/home/stelios/AndroidStudioProjects/Ergasia1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_432e56db34c9d8acec6765a6a7b54ef7226f3250/classes.dex" />
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_d1a354ef20847bde7410a537d9546e00407cc897\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Stelios\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_8c6f163cf43b19d304de80d7a2f71bbeb97fc883\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_92e1ddafb7cfc5585f83f504422b14deded110c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9bbb4c82d65b69e681dd309d4d46cb655fbffbc5">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7e2791f76b81fbe81d18498a469912f643cf9b87\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ed61a7b2d9443032eb3ed8da6c2621d3d7df23d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_43b125521b2851a360ab559c2357ca9accb0c2b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_1d7a13ad9ea4067c6386e487106bc045e662ca6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_edb5837a8f56a584c306ec4520f7d95bbe6ab24e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_4dd2b21f1215d417305bb219ca252290a99c6c4f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_037a30f8bf31d1abb38f7821f43f15aec28b739d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_8d6ad45c1adc36f940b215e15ecf3cdc5ff9b84f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f072f3bafbe27621254ccd449f5b3129648cb97c">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1a7edf7216f0d29e251110b9a65f0e8e66497f1a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_300886abe2c45af4d87b2d4798989d2892e756d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_11e9396aceb673e12f0e831ec41903821e511aad\classes.dex" />
     </item>
 
 </items>

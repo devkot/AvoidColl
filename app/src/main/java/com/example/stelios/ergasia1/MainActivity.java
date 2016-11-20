@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             finish();
         }
 
+
     }
     public void Notitriggered(String text){                       //create notification
         notification.setSmallIcon(R.drawable.ic_notifications_black_24dp);
@@ -103,22 +104,25 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         return false;
     }
 
-
+    long lastUpdateA = System.currentTimeMillis(), lastUpdateP=System.currentTimeMillis(), lastUpdateL=System.currentTimeMillis();
     @Override
     public void onSensorChanged(SensorEvent event) {
+        long curTimeA = System.currentTimeMillis(),curTimeP= System.currentTimeMillis(), curTimeL=System.currentTimeMillis();
         if (event.sensor.getType()==Sensor.TYPE_LINEAR_ACCELERATION){   //linear acceleration used to filter out gravity
-            acceleration.setText("Linear Acceleration\n" + "X: " + event.values[0] + " m/s^2"+ "\nY: " + event.values[1] + " m/s^2"+ "\nZ: " + event.values[2] + " m/s^2");
-            float x=event.values[0];
-            float y=event.values[1];
-            float z=event.values[2];
-            float speed = Math.abs(x + y + z - last_x - last_y - last_z);
-            if (speed > Settings.acceleration_value ) {
-                Notitriggered("Acceleration too high");
+            if ((curTimeA - lastUpdateA) > DelaySettings.delayA) {
+                acceleration.setText("Linear Acceleration\n" + "X: " + event.values[0] + " m/s^2" + "\nY: " + event.values[1] + " m/s^2" + "\nZ: " + event.values[2] + " m/s^2");
+                float x = event.values[0];
+                float y = event.values[1];
+                float z = event.values[2];
+                float speed = Math.abs(x + y + z - last_x - last_y - last_z);
+                if (speed > Settings.acceleration_value) {
+                    Notitriggered("Acceleration too high");
+                } else Notidestroy();
+                last_x = x;
+                last_y = y;
+                last_z = z;
+                lastUpdateA = curTimeA;
             }
-            else Notidestroy();
-            last_x = x;
-            last_y = y;
-            last_z = z;
         }
         if(event.sensor.getType()== Sensor.TYPE_PROXIMITY) {
             distance.setText("Proximity:\n" + String.valueOf(event.values[0]) + " cm");
@@ -134,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 }
                 else Notidestroy();
         }
+
     }
 
     @Override
@@ -147,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
     @Override
     protected void onResume() {
-        super.onResume();
+        super.onResume();/*
         switch(DelaySettings.value){ //switch for acceleration delay
             case 0:
                 mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_FASTEST);  // 0 delay
@@ -156,10 +161,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
                 break;
             case 2:
-                mSensorManager.registerListener(this, mSpeed, 1000000);  //once per second (in microseconds)
+                mSensorManager.registerListener(this, mSpeed, 100000000);  //once per second (in microseconds)
                 break;
             case 3:
-                mSensorManager.registerListener(this, mSpeed, 5000000);  //once per 5 seconds (in microseconds)
+                mSensorManager.registerListener(this, mSpeed, 500000000);  //once per 5 seconds (in microseconds)
                 break;
         }
         switch(DelaySettings.valuep){ //switch statement for proximity sensor delay
@@ -170,10 +175,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
                 break;
             case 2:
-                mSensorManager.registerListener(this, mProximity, 1000000);
+                mSensorManager.registerListener(this, mProximity, 100000000);
                 break;
             case 3:
-                mSensorManager.registerListener(this, mProximity, 5000000);
+                mSensorManager.registerListener(this, mProximity, 500000000);
                 break;
         }
         switch(DelaySettings.valuel){ //switch statement for light sensor delay
@@ -184,12 +189,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
                 break;
             case 2:
-                mSensorManager.registerListener(this, mLight, 1000000);
+                mSensorManager.registerListener(this, mLight, 100000000);
                 break;
             case 3:
-                mSensorManager.registerListener(this, mLight, 5000000);
+                mSensorManager.registerListener(this, mLight, 500000000);
                 break;
-        }
+        } */
+        mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL);
 
 
     }

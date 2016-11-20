@@ -24,6 +24,7 @@
         </activity>
         <activity android:name="com.example.stelios.ergasia1.Settings" />
         <activity android:name="com.example.stelios.ergasia1.DelaySettings" />
+        <activity android:name="com.example.stelios.ergasia1.ConvertValue" />
     </application>
 
 </manifest>
