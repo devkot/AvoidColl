@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if (!isTaskRoot()) { //prevent additional tasks from opening on intent click
             finish();
         }
-
-
     }
     public void Notitriggered(String text){                       //create notification
         notification.setSmallIcon(R.drawable.ic_notifications_black_24dp);

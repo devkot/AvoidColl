@@ -15,8 +15,6 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
     static int value=1, valuep=1, valuel=1; //spinner default values=normal
     static int delayA=200, delayP=200, delayL=200; //default values to 200ms as used in SENSOR_DELAY_NORMAL
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
