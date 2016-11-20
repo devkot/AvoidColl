@@ -23,18 +23,19 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener{
-    private SensorManager mSensorManager;
-    private Sensor mSpeed, mProximity, mLight;
-    private float last_x = 0, last_y = 0, last_z = 0;
-    TextView acceleration, distance, light;
-    NotificationCompat.Builder notification;
-    private static final int id = 1;
+    private SensorManager mSensorManager; //set sensor manager
+    private Sensor mSpeed, mProximity, mLight; //declare sensors
+    private float last_x = 0, last_y = 0, last_z = 0; //initialize accelerometer speed values
+    TextView acceleration, distance, light; //declare textview
+    NotificationCompat.Builder notification; //declare notification builder
+    private static final int id = 1; //initialize notification id
 
     @Override
     public final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //declare sensors and text view
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mSpeed = mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
         mProximity = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
@@ -42,8 +43,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         acceleration = (TextView)findViewById(R.id.acceleration);
         distance = (TextView)findViewById(R.id.distance);
         light = (TextView)findViewById(R.id.light);
-        notification = new NotificationCompat.Builder(this);
+
+        notification = new NotificationCompat.Builder(this); //create notification builder
         notification.setAutoCancel(true); //deletes notification on main app screen
+
         if (!isTaskRoot()) { //prevent additional tasks from opening on intent click
             finish();
         }
@@ -57,22 +60,22 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         notification.setContentTitle("Collision Danger");
         notification.setContentText(text);
         notification.setDefaults(Notification.DEFAULT_VIBRATE); //vibrate
-        notification.setPriority(NotificationCompat.PRIORITY_MAX);
+        notification.setPriority(NotificationCompat.PRIORITY_MAX); //make it heads-up notification
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class); //create intent
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT); //notification click
         notification.setContentIntent(pendingIntent);
 
-        NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE); //build and send notification
-        nm.notify(id, notification.build());
+        NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE); //build notification
+        nm.notify(id, notification.build()); //issue notification
         Context context = getApplicationContext();
         Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         Ringtone r = RingtoneManager.getRingtone(context.getApplicationContext(), notification);
-        r.play();
+        r.play(); //build notification sound and play
     }
     public void Notidestroy(){ //destroy notification
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        nm.cancelAll();
+        nm.cancelAll(); //cancels all notifications
         Context context = getApplicationContext();
         Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         Ringtone r = RingtoneManager.getRingtone(context.getApplicationContext(), notification);
@@ -81,62 +84,65 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.option_menu, menu); //your file name
+        MenuInflater inflater = getMenuInflater(); //create menu
+        inflater.inflate(R.menu.option_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()){
+        switch(item.getItemId()){ //switch classes
             case R.id.action_settings:
-                Intent intent = new Intent(this, Settings.class);
+                Intent intent = new Intent(this, Settings.class); //go to threshold settings
                 this.startActivity(intent);
                 break;
             case R.id.delay_settings:
-                Intent intent1 = new Intent(this, DelaySettings.class);
+                Intent intent1 = new Intent(this, DelaySettings.class); //go to delay
                 this.startActivity(intent1);
                 break;
             case R.id.exit:
                 onStop();
-                System.exit(0);
+                System.exit(0); //exit app without dialog
                 break;
         }
         return false;
     }
 
-    long lastUpdateA = System.currentTimeMillis(), lastUpdateP=System.currentTimeMillis(), lastUpdateL=System.currentTimeMillis();
+    long lastUpdateA=System.currentTimeMillis(), lastUpdateP=System.currentTimeMillis(), lastUpdateL=System.currentTimeMillis();
     @Override
     public void onSensorChanged(SensorEvent event) {
-        long curTimeA = System.currentTimeMillis(),curTimeP= System.currentTimeMillis(), curTimeL=System.currentTimeMillis();
+        long curTime = System.currentTimeMillis();
         if (event.sensor.getType()==Sensor.TYPE_LINEAR_ACCELERATION){   //linear acceleration used to filter out gravity
-            if ((curTimeA - lastUpdateA) > DelaySettings.delayA) {
+
+            if ((curTime - lastUpdateA) > DelaySettings.delayA) { //checks delay
                 acceleration.setText("Linear Acceleration\n" + "X: " + event.values[0] + " m/s^2" + "\nY: " + event.values[1] + " m/s^2" + "\nZ: " + event.values[2] + " m/s^2");
-                float x = event.values[0];
-                float y = event.values[1];
-                float z = event.values[2];
-                float speed = Math.abs(x + y + z - last_x - last_y - last_z);
-                if (speed > Settings.acceleration_value) {
-                    Notitriggered("Acceleration too high");
+                float x = event.values[0]; float y = event.values[1]; float z = event.values[2]; //accelerometer values
+                float speed = Math.abs(x + y + z - last_x - last_y - last_z); //calculate speed (absolute values)
+
+                if (speed > Settings.acceleration_value) { //check if speed > threshold
+                    Notitriggered("Acceleration too high"); //danger
                 } else Notidestroy();
-                last_x = x;
-                last_y = y;
-                last_z = z;
-                lastUpdateA = curTimeA;
+
+                last_x = x; last_y = y; last_z = z; lastUpdateA = curTime; //save last readings
             }
         }
-        if(event.sensor.getType()== Sensor.TYPE_PROXIMITY) {
-            distance.setText("Proximity:\n" + String.valueOf(event.values[0]) + " cm");
-            if (event.values[0] == 0){
-                Notitriggered("Object close");
+        if(event.sensor.getType()== Sensor.TYPE_PROXIMITY) { //proximity sensor
+
+            if((curTime - lastUpdateP) > DelaySettings.delayP) { //checks delay
+                distance.setText("Proximity:\n" + String.valueOf(event.values[0]) + " cm");
+                if (event.values[0] == 0) { //check threshold
+                    Notitriggered("Object close");
+                } else Notidestroy();
+                lastUpdateP= curTime;
             }
-            else Notidestroy();
         }
-        if(event.sensor.getType()==Sensor.TYPE_LIGHT){
-            light.setText("Lighting:\n" + event.values[0] + " lx");
-                if (event.values[0] < Settings.light_value) {
+        if(event.sensor.getType()==Sensor.TYPE_LIGHT){ //light sensor
+            if((curTime - lastUpdateL) > DelaySettings.delayL) { //check delay
+                light.setText("Lighting:\n" + event.values[0] + " lx");
+                if (event.values[0] < Settings.light_value) { //check threshold
                     Notitriggered("Lighting too low");
-                }
-                else Notidestroy();
+                } else Notidestroy();
+                lastUpdateL=curTime;
+            }
         }
 
     }
@@ -152,62 +158,18 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
     @Override
     protected void onResume() {
-        super.onResume();/*
-        switch(DelaySettings.value){ //switch for acceleration delay
-            case 0:
-                mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_FASTEST);  // 0 delay
-                break;
-            case 1:
-                mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
-                break;
-            case 2:
-                mSensorManager.registerListener(this, mSpeed, 100000000);  //once per second (in microseconds)
-                break;
-            case 3:
-                mSensorManager.registerListener(this, mSpeed, 500000000);  //once per 5 seconds (in microseconds)
-                break;
-        }
-        switch(DelaySettings.valuep){ //switch statement for proximity sensor delay
-            case 0:
-                mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_FASTEST); // 0 delay
-                break;
-            case 1:
-                mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
-                break;
-            case 2:
-                mSensorManager.registerListener(this, mProximity, 100000000);
-                break;
-            case 3:
-                mSensorManager.registerListener(this, mProximity, 500000000);
-                break;
-        }
-        switch(DelaySettings.valuel){ //switch statement for light sensor delay
-            case 0:
-                mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_FASTEST); // 0 delay
-                break;
-            case 1:
-                mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL); //5 readings per sec
-                break;
-            case 2:
-                mSensorManager.registerListener(this, mLight, 100000000);
-                break;
-            case 3:
-                mSensorManager.registerListener(this, mLight, 500000000);
-                break;
-        } */
+        super.onResume();
         mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
         mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL);
         mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL);
-
-
     }
     @Override
-    public void onBackPressed() {
-        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit")
+    public void onBackPressed() { //exit app through back button
+        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit") //build dialog
                 .setMessage("Are you sure you want to exit?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
+                    public void onClick(DialogInterface dialog, int which) { //exit on click
                         finish();
                         System.exit(0);
                     }

@@ -5,40 +5,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="14219692070051"
+    timestamp="16249535203814"
     token="9129204485444715762"
-    verifier="FIELD_ADDED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="122" />
+        duration="131" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="19" />
     <task
         name="instant-run-transform"
-        duration="36" />
+        duration="64" />
     <task
         name="verifier"
-        duration="6" />
+        duration="8" />
 
     <artifact
-        location="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-        type="DEX" />
+        location="H:\AS_Projects\avoidcoll\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="13934124899817"
+        timestamp="15529578426930"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="14219692070051"
-        verifier="FIELD_ADDED" >
+        timestamp="16249535203814"
+        verifier="COMPATIBLE" >
         <artifact
-            location="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
+            location="H:\AS_Projects\avoidcoll\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

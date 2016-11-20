@@ -10,7 +10,7 @@ import android.os.Bundle;
 
 public class DelaySettings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     TextView textView1, textView2, textView3;
-    Spinner spinnerA, spinnerP, spinnerL;
+    Spinner spinnerA, spinnerP, spinnerL; //spinner to choose delay
     String paths[] = {"No delay","Normal(5 times per second)","Once per second","Once per 5 seconds"}; //populate spinner
     static int value=1, valuep=1, valuel=1; //spinner default values=normal
     static int delayA=200, delayP=200, delayL=200; //default values to 200ms as used in SENSOR_DELAY_NORMAL
@@ -22,14 +22,12 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delay);
 
-        textView1=(TextView)findViewById(R.id.textView1);
-        textView1.setText("Accelerometer delay preferences");
-        textView2=(TextView)findViewById(R.id.textView2);
-        textView2.setText("Proximity sensor delay preferences");
-        textView3=(TextView)findViewById(R.id.textView3);
-        textView3.setText("Lighting sensor delay preferences");
+        textView1=(TextView)findViewById(R.id.textView1);textView1.setText("Accelerometer delay preferences");//set text view
+        textView2=(TextView)findViewById(R.id.textView2);textView2.setText("Proximity sensor delay preferences");
+        textView3=(TextView)findViewById(R.id.textView3);textView3.setText("Lighting sensor delay preferences");
 
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<>(DelaySettings.this, android.R.layout.simple_spinner_item, paths);//spinner array
+
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<>(DelaySettings.this, android.R.layout.simple_spinner_item, paths);//spinner array adapter
         spinnerA = (Spinner)findViewById(R.id.spinnerA); //accelerometer spinner
         spinnerA.setAdapter(adapter1);
         spinnerA.setOnItemSelectedListener(this); //enable accelerometer listener
@@ -48,6 +46,7 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        //outer switch statement gets spinner id and inner switch statement updates values according to the user's choice
         switch(parent.getId()) { //get spinner id and match it
             case R.id.spinnerA:
                 value = spinnerA.getSelectedItemPosition();  //get position
@@ -55,16 +54,16 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
                 /*--------------------------------------*/
                 switch (value) { //switch for acceleration delay
                     case 0:
-                        delayA=0;
+                        delayA=0; //no delay
                         break;
                     case 1:
-                        delayA=200;
+                        delayA=200; //normal
                         break;
                     case 2:
-                        delayA=1000;
+                        delayA=1000; //1sec
                         break;
                     case 3:
-                        delayA=5000;
+                        delayA=5000; //5sec
                         break;
                 }
                 /*--------------------------------------*/
@@ -76,36 +75,37 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
                 /*--------------------------------------*/
                 switch (value) { //switch for acceleration delay
                     case 0:
-                        delayP=0;
+                        delayP=0;//no delay
                         break;
                     case 1:
-                        delayP=200;
+                        delayP=200;//normal
                         break;
                     case 2:
-                        delayP=1000;
+                        delayP=1000;//1sec
                         break;
                     case 3:
-                        delayP=5000;
+                        delayP=5000;//5sec
                         break;
                 }
                 /*--------------------------------------*/
                 break;
+
             case R.id.spinnerL:
                 valuel = spinnerL.getSelectedItemPosition(); //get position
 
                 /*--------------------------------------*/
                 switch (value) { //switch for acceleration delay
                     case 0:
-                        delayL=0;
+                        delayL=0;//no delay
                         break;
                     case 1:
-                        delayL=200;
+                        delayL=200;//normal
                         break;
                     case 2:
-                        delayL=1000;
+                        delayL=1000;//1sec
                         break;
                     case 3:
-                        delayL=5000;
+                        delayL=5000;//5sec
                         break;
                 }
                 /*--------------------------------------*/
