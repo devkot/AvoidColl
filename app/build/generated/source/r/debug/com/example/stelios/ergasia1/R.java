@@ -21,16 +21,13 @@ public final class R {
         public static final int abc_slide_out_top=0x7f050009;
     }
     public static final class array {
-        public static final int listArray=0x7f0a0000;
-        public static final int listArray2=0x7f0a0001;
-        public static final int listValues=0x7f0a0002;
-        public static final int list_preference_entries=0x7f0a0003;
-        public static final int list_preference_entry_values=0x7f0a0004;
-        public static final int multi_select_list_preference_default_value=0x7f0a0005;
-        public static final int pref_example_list_titles=0x7f0a0006;
-        public static final int pref_example_list_values=0x7f0a0007;
-        public static final int pref_sync_frequency_titles=0x7f0a0008;
-        public static final int pref_sync_frequency_values=0x7f0a0009;
+        public static final int list_preference_entries=0x7f0a0000;
+        public static final int list_preference_entry_values=0x7f0a0001;
+        public static final int multi_select_list_preference_default_value=0x7f0a0002;
+        public static final int pref_example_list_titles=0x7f0a0003;
+        public static final int pref_example_list_values=0x7f0a0004;
+        public static final int pref_sync_frequency_titles=0x7f0a0005;
+        public static final int pref_sync_frequency_values=0x7f0a0006;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"

@@ -48,7 +48,6 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
         switch(parent.getId()) { //get spinner id and match it
             case R.id.spinnerA:
                 value = spinnerA.getSelectedItemPosition();  //get position
-
                 /*--------------------------------------*/
                 switch (value) { //switch for acceleration delay
                     case 0:
@@ -66,10 +65,8 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
                 }
                 /*--------------------------------------*/
                 break;
-
             case R.id.spinnerP:
                 valuep = spinnerP.getSelectedItemPosition(); //get position
-
                 /*--------------------------------------*/
                 switch (value) { //switch for acceleration delay
                     case 0:
@@ -87,10 +84,8 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
                 }
                 /*--------------------------------------*/
                 break;
-
             case R.id.spinnerL:
                 valuel = spinnerL.getSelectedItemPosition(); //get position
-
                 /*--------------------------------------*/
                 switch (value) { //switch for acceleration delay
                     case 0:

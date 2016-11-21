@@ -124,16 +124,19 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }
         if(event.sensor.getType()== Sensor.TYPE_PROXIMITY) { //proximity sensor
-
+          //  distance.setText("Proximity:\n" + String.valueOf(event.values[0]) + " cm");
             if((curTime - lastUpdateP) > DelaySettings.delayP) { //checks delay
                 distance.setText("Proximity:\n" + String.valueOf(event.values[0]) + " cm");
                 if (event.values[0] == 0) { //check threshold
                     Notitriggered("Object close");
                 } else Notidestroy();
+
                 lastUpdateP= curTime;
+
             }
         }
         if(event.sensor.getType()==Sensor.TYPE_LIGHT){ //light sensor
+
             if((curTime - lastUpdateL) > DelaySettings.delayL) { //check delay
                 light.setText("Lighting:\n" + event.values[0] + " lx");
                 if (event.values[0] < Settings.light_value) { //check threshold
@@ -142,7 +145,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 lastUpdateL=curTime;
             }
         }
-
     }
 
     @Override
