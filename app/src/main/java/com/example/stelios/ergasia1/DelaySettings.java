@@ -13,7 +13,7 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
     Spinner spinnerA, spinnerP, spinnerL; //spinner to choose delay
     String paths[] = {"No delay","Normal(5 times per second)","Once per second","Once per 5 seconds"}; //populate spinner
     static int value=1, valuep=1, valuel=1; //spinner default values=normal
-    static int delayA=200, delayP=200, delayL=200; //default values to 200ms as used in SENSOR_DELAY_NORMAL
+    static int delayA=199, delayP=199, delayL=199; //default values to 200ms as used in SENSOR_DELAY_NORMAL
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +31,15 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
         spinnerA.setOnItemSelectedListener(this); //enable accelerometer listener
         spinnerA.setSelection(value); //set value
 
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(DelaySettings.this, android.R.layout.simple_spinner_item, paths);//spinner array adapter
         spinnerP =(Spinner)findViewById(R.id.spinnerP); //proximity spinner
-        spinnerP.setAdapter(adapter1);
+        spinnerP.setAdapter(adapter2);
         spinnerP.setOnItemSelectedListener(this); //enable proximity listener
         spinnerP.setSelection(valuep); //set value
 
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<>(DelaySettings.this, android.R.layout.simple_spinner_item, paths);//spinner array adapter
         spinnerL = (Spinner)findViewById(R.id.spinnerL); //light spinner
-        spinnerL.setAdapter(adapter1);
+        spinnerL.setAdapter(adapter3);
         spinnerL.setOnItemSelectedListener(this); //enable light listener
         spinnerL.setSelection(valuel); //set value
     }
@@ -54,13 +56,13 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
                         delayA=0; //no delay
                         break;
                     case 1:
-                        delayA=200; //normal
+                        delayA=199; //normal
                         break;
                     case 2:
-                        delayA=1000; //1sec
+                        delayA=999; //1sec
                         break;
                     case 3:
-                        delayA=5000; //5sec
+                        delayA=4999; //5sec
                         break;
                 }
                 /*--------------------------------------*/
@@ -68,18 +70,18 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
             case R.id.spinnerP:
                 valuep = spinnerP.getSelectedItemPosition(); //get position
                 /*--------------------------------------*/
-                switch (value) { //switch for acceleration delay
+                switch (valuep) { //switch for acceleration delay
                     case 0:
                         delayP=0;//no delay
                         break;
                     case 1:
-                        delayP=200;//normal
+                        delayP=199;//normal
                         break;
                     case 2:
-                        delayP=1000;//1sec
+                        delayP=999;//1sec
                         break;
                     case 3:
-                        delayP=5000;//5sec
+                        delayP=4999;//5sec
                         break;
                 }
                 /*--------------------------------------*/
@@ -87,18 +89,18 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
             case R.id.spinnerL:
                 valuel = spinnerL.getSelectedItemPosition(); //get position
                 /*--------------------------------------*/
-                switch (value) { //switch for acceleration delay
+                switch (valuel) { //switch for acceleration delay
                     case 0:
                         delayL=0;//no delay
                         break;
                     case 1:
-                        delayL=200;//normal
+                        delayL=199;//normal
                         break;
                     case 2:
-                        delayL=1000;//1sec
+                        delayL=999;//1sec
                         break;
                     case 3:
-                        delayL=5000;//5sec
+                        delayL=4999;//5sec
                         break;
                 }
                 /*--------------------------------------*/

@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             finish();
         }
     }
+
     public void Notitriggered(String text){                       //create notification
         notification.setSmallIcon(R.drawable.ic_notifications_black_24dp);
         notification.setTicker("Alert");
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         Ringtone r = RingtoneManager.getRingtone(context.getApplicationContext(), notification);
         r.play(); //build notification sound and play
     }
+
     public void Notidestroy(){ //destroy notification
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         nm.cancelAll(); //cancels all notifications
@@ -86,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         inflater.inflate(R.menu.option_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){ //switch classes
@@ -124,15 +127,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }
         if(event.sensor.getType()== Sensor.TYPE_PROXIMITY) { //proximity sensor
-          //  distance.setText("Proximity:\n" + String.valueOf(event.values[0]) + " cm");
+
+            distance.setText("Proximity:\n" + String.valueOf(event.values[0]) + " cm");//set text because sensor doesn't trigger automatically
             if((curTime - lastUpdateP) > DelaySettings.delayP) { //checks delay
                 distance.setText("Proximity:\n" + String.valueOf(event.values[0]) + " cm");
                 if (event.values[0] == 0) { //check threshold
                     Notitriggered("Object close");
                 } else Notidestroy();
-
                 lastUpdateP= curTime;
-
             }
         }
         if(event.sensor.getType()==Sensor.TYPE_LIGHT){ //light sensor
@@ -142,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 if (event.values[0] < Settings.light_value) { //check threshold
                     Notitriggered("Lighting too low");
                 } else Notidestroy();
-                lastUpdateL=curTime;
+                lastUpdateL = curTime;
             }
         }
     }
@@ -159,9 +161,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onResume() {
         super.onResume();
-        mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_NORMAL);
-        mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL);
-        mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_FASTEST); //fastest used to show the difference between delay settings
+        mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_FASTEST);
+        mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_FASTEST);
     }
     @Override
     public void onBackPressed() { //exit app through back button

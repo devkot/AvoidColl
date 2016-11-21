@@ -5,7 +5,7 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="6107809703725"
+    timestamp="8840695180860"
     token="9129204485444715762"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -27,7 +27,7 @@
         type="MAIN" />
 
     <build
-        timestamp="6107809703725"
+        timestamp="8840695180860"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
