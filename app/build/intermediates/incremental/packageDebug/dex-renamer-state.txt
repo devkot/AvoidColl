@@ -1,7 +1,7 @@
-#Mon Nov 21 18:55:15 EET 2016
-base.0=H\:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_7e2791f76b81fbe81d18498a469912f643cf9b87
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=H\:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_1a7edf7216f0d29e251110b9a65f0e8e66497f1a\\classes.dex
-base.1=H\:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_1a7edf7216f0d29e251110b9a65f0e8e66497f1a
-file.0=H\:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_7e2791f76b81fbe81d18498a469912f643cf9b87\\classes.dex
+#Tue Nov 22 13:57:45 EET 2016
+base.0=/home/mitsaras/AndroidStudioProjects/myapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ed5473888e6f35e8345364979bc9f6a2662360ca
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/mitsaras/AndroidStudioProjects/myapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bfa261bd2e31e80a3fbbb3fc07bda5e89f730c41/classes.dex
+base.1=/home/mitsaras/AndroidStudioProjects/myapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bfa261bd2e31e80a3fbbb3fc07bda5e89f730c41
+file.0=/home/mitsaras/AndroidStudioProjects/myapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ed5473888e6f35e8345364979bc9f6a2662360ca/classes.dex

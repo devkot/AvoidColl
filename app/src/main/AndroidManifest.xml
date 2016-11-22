@@ -7,24 +7,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="AvoidColl"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:launchMode="singleInstance">
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleInstance">
-
+            android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Settings"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
+            android:configChanges="orientation|keyboardHidden" />
         <activity android:name=".DelaySettings"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
+            android:configChanges="orientation|keyboardHidden" />
     </application>
 
 </manifest>

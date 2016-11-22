@@ -5,8 +5,8 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="8840695180860"
-    token="9129204485444715762"
+    timestamp="3047041130403"
+    token="8872282245479689007"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
@@ -23,14 +23,14 @@
         duration="0" />
 
     <artifact
-        location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
+        location="/home/mitsaras/AndroidStudioProjects/myapp/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="8840695180860"
+        timestamp="3047041130403"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
+            location="/home/mitsaras/AndroidStudioProjects/myapp/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 
