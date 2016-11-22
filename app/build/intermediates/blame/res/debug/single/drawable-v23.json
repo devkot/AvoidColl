@@ -1,6 +1,6 @@
 [
     {
-        "merged": "/home/mitsaras/AndroidStudioProjects/myapp/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
-        "source": "/home/mitsaras/AndroidStudioProjects/myapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-v23/abc_control_background_material.xml"
+        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
     }
 ]

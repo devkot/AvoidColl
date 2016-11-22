@@ -11,7 +11,7 @@ import android.os.Bundle;
 public class DelaySettings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     TextView textView1, textView2, textView3;
     Spinner spinnerA, spinnerP, spinnerL; //spinner to choose delay
-    String paths[] = {"No delay","Normal(5 times per second)","Once per second","Once per 5 seconds"}; //populate spinner
+    String paths[] = {"5 times per second","Twice per second","Once per second","Once per 5 seconds"}; //populate spinner
     static int value=1, valuep=1, valuel=1; //spinner default values=normal
     static int delayA=199, delayP=199, delayL=199; //default values to 200ms as used in SENSOR_DELAY_NORMAL
 
@@ -53,10 +53,10 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
                 /*--------------------------------------*/
                 switch (value) { //switch for acceleration delay
                     case 0:
-                        delayA=0; //no delay
+                        delayA=199; //no delay
                         break;
                     case 1:
-                        delayA=199; //normal
+                        delayA=499; //normal
                         break;
                     case 2:
                         delayA=999; //1sec
@@ -72,10 +72,10 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
                 /*--------------------------------------*/
                 switch (valuep) { //switch for acceleration delay
                     case 0:
-                        delayP=0;//no delay
+                        delayP=199;//no delay
                         break;
                     case 1:
-                        delayP=199;//normal
+                        delayP=499;//normal
                         break;
                     case 2:
                         delayP=999;//1sec
@@ -91,10 +91,10 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
                 /*--------------------------------------*/
                 switch (valuel) { //switch for acceleration delay
                     case 0:
-                        delayL=0;//no delay
+                        delayL=199;//no delay
                         break;
                     case 1:
-                        delayL=199;//normal
+                        delayL=499;//normal
                         break;
                     case 2:
                         delayL=999;//1sec
