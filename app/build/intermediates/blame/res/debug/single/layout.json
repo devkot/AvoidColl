@@ -168,10 +168,6 @@
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_lines.xml"
     },
     {
-        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\layout\\settings.xml",
-        "source": "H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\layout\\settings.xml"
-    },
-    {
         "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     }

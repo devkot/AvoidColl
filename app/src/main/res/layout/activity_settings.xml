@@ -30,7 +30,7 @@
         android:max="50"
         android:layout_marginTop="17dp"
         android:layout_below="@+id/textView6"
-        style="@style/Widget.AppCompat.SeekBar"
+        style="@android:style/Widget.Holo.Light.SeekBar"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -84,7 +84,8 @@
         android:max="100"
         android:layout_below="@+id/textView5"
         android:layout_alignStart="@+id/seekBarA"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        style="@android:style/Widget.Holo.SeekBar" />
 
 
 </RelativeLayout>

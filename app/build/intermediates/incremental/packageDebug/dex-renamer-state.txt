@@ -1,4 +1,4 @@
-#Tue Nov 22 18:59:38 EET 2016
+#Tue Nov 22 19:09:24 EET 2016
 base.0=H\:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_7e2791f76b81fbe81d18498a469912f643cf9b87
 renamed.1=classes2.dex
 renamed.0=classes.dex

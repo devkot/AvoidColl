@@ -5,7 +5,7 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="7125720921548"
+    timestamp="8182068208417"
     token="9129204485444715762"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -23,15 +23,15 @@
         duration="0" />
 
     <artifact
-        location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="H:\AS_Projects\avoidcoll\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="7125720921548"
+        timestamp="8182068208417"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
-            type="MAIN" />
+            location="H:\AS_Projects\avoidcoll\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
