@@ -44,9 +44,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         distance = (TextView)findViewById(R.id.distance);
         light = (TextView)findViewById(R.id.light);
 
+        if(mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION) == null) //check if the device has sensor
+            acceleration.setText("Your device doesn't have an accelerometer");
+
+        if(mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY) == null) //check if the device has sensor
+            distance.setText("Your device doesn't have a proximity sensor");
+
+        if(mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT) == null) //check if the device has sensor
+            light.setText("Your device doesn't have a light sensor");
+
         notification = new NotificationCompat.Builder(this); //create notification builder
         notification.setAutoCancel(true); //deletes notification on main app screen
-
         if (!isTaskRoot()) { //prevent additional tasks from opening on intent click
             finish();
         }

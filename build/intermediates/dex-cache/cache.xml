@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="05f9fe84b924574c169963038f6bca59103777d1">
+        sha1="0238e57c2b59ba4f14c96c5d289ea4e36574ff43">
         <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7e2791f76b81fbe81d18498a469912f643cf9b87\classes.dex" />
     </item>
     <item
@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="2eaa7e1b5762081aca95f1ef49323a332940354d">
+        sha1="e8bd179f779a47f85d0563e63eb093a04d510e0c">
         <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1a7edf7216f0d29e251110b9a65f0e8e66497f1a\classes.dex" />
     </item>
     <item
