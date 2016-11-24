@@ -88,10 +88,6 @@
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_seekbar.xml",
-        "source": "H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\layout\\activity_seekbar.xml"
-    },
-    {
         "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_search_view.xml"
     },
@@ -138,10 +134,6 @@
     {
         "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_notification.xml",
-        "source": "H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\layout\\activity_notification.xml"
     },
     {
         "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",

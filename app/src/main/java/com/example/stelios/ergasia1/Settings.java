@@ -15,7 +15,7 @@ public class Settings extends AppCompatActivity {  //seekbar settings
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_settings); //set layout
 
         textL=(TextView)findViewById(R.id.textView5);
         textA=(TextView)findViewById(R.id.textView6);
@@ -40,7 +40,7 @@ public class Settings extends AppCompatActivity {  //seekbar settings
             }
         });
 
-        mSeekBarA.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {  //accelerometer
+        mSeekBarA.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {  //accelerometer seekbar
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 acceleration_value=progress;//update progress

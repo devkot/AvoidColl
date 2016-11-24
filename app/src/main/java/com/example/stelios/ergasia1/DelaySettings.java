@@ -9,9 +9,9 @@ import android.os.Bundle;
         import android.widget.TextView;
 
 public class DelaySettings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    TextView textView1, textView2, textView3;
+    TextView textView1, textView2, textView3; //declare textview
     Spinner spinnerA, spinnerP, spinnerL; //spinner to choose delay
-    String paths[] = {"5 times per second","Twice per second","Once per second","Once per 5 seconds"}; //populate spinner
+    String paths[] = {"5 times per second","Twice per second(default)","Once per second","Once per 5 seconds"}; //populate spinner
     static int value=1, valuep=1, valuel=1; //spinner default values=normal
     static int delayA=199, delayP=199, delayL=199; //default values to 200ms as used in SENSOR_DELAY_NORMAL
 
@@ -29,19 +29,19 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
         spinnerA = (Spinner)findViewById(R.id.spinnerA); //accelerometer spinner
         spinnerA.setAdapter(adapter1);
         spinnerA.setOnItemSelectedListener(this); //enable accelerometer listener
-        spinnerA.setSelection(value); //set value
+        spinnerA.setSelection(value); //initialize
 
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(DelaySettings.this, android.R.layout.simple_spinner_item, paths);//spinner array adapter
         spinnerP =(Spinner)findViewById(R.id.spinnerP); //proximity spinner
         spinnerP.setAdapter(adapter2);
         spinnerP.setOnItemSelectedListener(this); //enable proximity listener
-        spinnerP.setSelection(valuep); //set value
+        spinnerP.setSelection(valuep); //initialize
 
         ArrayAdapter<String> adapter3 = new ArrayAdapter<>(DelaySettings.this, android.R.layout.simple_spinner_item, paths);//spinner array adapter
         spinnerL = (Spinner)findViewById(R.id.spinnerL); //light spinner
         spinnerL.setAdapter(adapter3);
         spinnerL.setOnItemSelectedListener(this); //enable light listener
-        spinnerL.setSelection(valuel); //set value
+        spinnerL.setSelection(valuel); //initialize
     }
 
     @Override
@@ -70,7 +70,7 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
             case R.id.spinnerP:
                 valuep = spinnerP.getSelectedItemPosition(); //get position
                 /*--------------------------------------*/
-                switch (valuep) { //switch for acceleration delay
+                switch (valuep) { //switch for proximity delay
                     case 0:
                         delayP=199;//no delay
                         break;
@@ -89,7 +89,7 @@ public class DelaySettings extends AppCompatActivity implements AdapterView.OnIt
             case R.id.spinnerL:
                 valuel = spinnerL.getSelectedItemPosition(); //get position
                 /*--------------------------------------*/
-                switch (valuel) { //switch for acceleration delay
+                switch (valuel) { //switch for light delay
                     case 0:
                         delayL=199;//no delay
                         break;

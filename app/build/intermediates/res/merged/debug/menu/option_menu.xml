@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/action_settings"
-    android:title="Settings"
+    android:title="Threshold settings"
 
     />
     <item android:id="@+id/delay_settings"
-        android:title="Sensor delay settings"
+        android:title="Frequency settings"
         />
 
     <item android:id="@+id/exit"
