@@ -46,10 +46,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         if(mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION) == null) //check if the device has sensor
             acceleration.setText("Your device doesn't have an accelerometer");
-
         if(mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY) == null) //check if the device has sensor
             distance.setText("Your device doesn't have a proximity sensor");
-
         if(mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT) == null) //check if the device has sensor
             light.setText("Your device doesn't have a light sensor");
 
@@ -156,11 +154,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }
     }
-
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
-
     @Override
     protected void onPause() {
         super.onPause();
