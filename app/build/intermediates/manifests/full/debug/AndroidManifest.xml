@@ -15,6 +15,9 @@
         android:launchMode="singleInstance"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <service android:name="org.eclipse.paho.android.service.MqttService" >
+        </service>
+
         <activity
             android:name="com.example.stelios.ergasia1.MainActivity"
             android:configChanges="orientation|keyboardHidden"
