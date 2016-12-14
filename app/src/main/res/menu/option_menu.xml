@@ -8,7 +8,10 @@
         android:title="Frequency settings"
         />
 
+    <item android:id="@+id/online_mode"
+        android:title="Go Online"/>
     <item android:id="@+id/exit"
     android:title="Quit Application"
     />
+
 </menu>

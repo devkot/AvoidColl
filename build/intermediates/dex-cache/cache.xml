@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="45406c3a151f1ac6ee04da6e5e314007210a3321">
+        sha1="0747e904560233075e90c9e4d61cbf547db9544e">
         <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7e2791f76b81fbe81d18498a469912f643cf9b87\classes.dex" />
     </item>
     <item
@@ -75,12 +75,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Stelios\.gradle\caches\modules-2\files-2.1\org.eclipse.paho\org.eclipse.paho.client.mqttv3\1.0.2\11752d3f24d1a9deda4533a7ca18d8496417ceeb\org.eclipse.paho.client.mqttv3-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="11752d3f24d1a9deda4533a7ca18d8496417ceeb">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\org.eclipse.paho.client.mqttv3-1.0.2_eea341084d17d33fb78b761e57d2e2634d2146af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_11e9396aceb673e12f0e831ec41903821e511aad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Stelios\.gradle\caches\modules-2\files-2.1\org.eclipse.paho\org.eclipse.paho.android.service\1.0.2\2d956522c556caeb35148445ecd059ebe67331f6\org.eclipse.paho.android.service-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2d956522c556caeb35148445ecd059ebe67331f6">
+        <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\org.eclipse.paho.android.service-1.0.2_d192da54eea0dbb1c965998383131b14f67b1224\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -142,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="632648a94720d781e4aa74ef392fe95c3009658f">
+        sha1="ace9dbcc84f4e5491944b2b295a9507dec7873df">
         <dex dex="H:\AS_Projects\avoidcoll\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1a7edf7216f0d29e251110b9a65f0e8e66497f1a\classes.dex" />
     </item>
     <item

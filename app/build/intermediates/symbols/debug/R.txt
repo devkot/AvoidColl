@@ -511,7 +511,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c0042
 int id action_mode_bar_stub 0x7f0c0041
 int id action_mode_close_button 0x7f0c0026
-int id action_settings 0x7f0c0071
+int id action_settings 0x7f0c0072
 int id activity_chooser_view_content 0x7f0c0027
 int id activity_main 0x7f0c005a
 int id add 0x7f0c0013
@@ -529,13 +529,13 @@ int id custom 0x7f0c003a
 int id customPanel 0x7f0c0039
 int id decor_content_parent 0x7f0c0043
 int id default_activity_button 0x7f0c002a
-int id delay_settings 0x7f0c0072
+int id delay_settings 0x7f0c0073
 int id disableHome 0x7f0c000c
 int id distance 0x7f0c005c
 int id edit_query 0x7f0c0047
 int id end 0x7f0c001b
 int id end_padder 0x7f0c0070
-int id exit 0x7f0c0073
+int id exit 0x7f0c0075
 int id expand_activities_button 0x7f0c0028
 int id expanded_menu 0x7f0c003b
 int id home 0x7f0c0004
@@ -555,6 +555,7 @@ int id multiply 0x7f0c0014
 int id never 0x7f0c0020
 int id none 0x7f0c000e
 int id normal 0x7f0c000a
+int id online_mode 0x7f0c0074
 int id parentPanel 0x7f0c0030
 int id progress_circular 0x7f0c0005
 int id progress_horizontal 0x7f0c0006
@@ -605,6 +606,7 @@ int id textViewA 0x7f0c0061
 int id time 0x7f0c006a
 int id title 0x7f0c002d
 int id title_template 0x7f0c0032
+int id toggleButton 0x7f0c0071
 int id top 0x7f0c0023
 int id topPanel 0x7f0c0031
 int id up 0x7f0c0008
@@ -652,10 +654,11 @@ int layout notification_template_lines 0x7f040021
 int layout notification_template_media 0x7f040022
 int layout notification_template_part_chronometer 0x7f040023
 int layout notification_template_part_time 0x7f040024
-int layout select_dialog_item_material 0x7f040025
-int layout select_dialog_multichoice_material 0x7f040026
-int layout select_dialog_singlechoice_material 0x7f040027
-int layout support_simple_spinner_dropdown_item 0x7f040028
+int layout online_mode 0x7f040025
+int layout select_dialog_item_material 0x7f040026
+int layout select_dialog_multichoice_material 0x7f040027
+int layout select_dialog_singlechoice_material 0x7f040028
+int layout support_simple_spinner_dropdown_item 0x7f040029
 int menu option_menu 0x7f0e0000
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000

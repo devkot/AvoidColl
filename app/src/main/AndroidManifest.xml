@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.stelios.ergasia1">
+
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="AvoidColl"
+        android:launchMode="singleInstance"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:launchMode="singleInstance">
-        <service android:name="org.eclipse.paho.android.service.MqttService" >
-        </service>
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
+        android:theme="@style/AppTheme">
+        <service android:name="org.eclipse.paho.android.service.MqttService"></service>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Settings"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden" />
-        <activity android:name=".DelaySettings"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name=".Settings"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DelaySettings"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OnlineMode"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
