@@ -12,8 +12,8 @@ public class Publisher {
         String topic = "MQTT Example";
         String content = "Message from MqttPublishSample ";
         int qos = 2;
-        String broker = " tcp ://localhost:1883";
-        String clientId = " JavaSamplePublisher ";
+        String broker = "tcp://localhost:1883";
+        String clientId = "JavaSamplePublisher";
         MemoryPersistence persistence = new MemoryPersistence();
         try {
 //Connect to MQTT Broker
