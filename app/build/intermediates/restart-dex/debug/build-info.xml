@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="23"
+    abi="x86"
+    api-level="24"
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="21328547030096"
-    token="9129204485444715762"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="29609084389431"
+    token="9129204485444715762" >
 
     <task
         name="javac"
@@ -22,16 +21,13 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
-
     <build
-        timestamp="21328547030096"
+        timestamp="29579305307869"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="H:\AS_Projects\avoidcoll\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
+    <build timestamp="29609084389431" />
 
 </instant-run>
