@@ -1790,8 +1790,6 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f020056;
     }
     public static final class id {
-        public static final int GPS=0x7f0c0072;
-        public static final int WIFI=0x7f0c0073;
         public static final int acceleration=0x7f0c005b;
         public static final int action0=0x7f0c0064;
         public static final int action_bar=0x7f0c0045;
@@ -1808,7 +1806,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c0042;
         public static final int action_mode_bar_stub=0x7f0c0041;
         public static final int action_mode_close_button=0x7f0c0026;
-        public static final int action_settings=0x7f0c0074;
+        public static final int action_settings=0x7f0c0073;
         public static final int activity_chooser_view_content=0x7f0c0027;
         public static final int activity_main=0x7f0c005a;
         public static final int add=0x7f0c0013;
@@ -1816,6 +1814,7 @@ containing a value of this type.
         public static final int always=0x7f0c001d;
         public static final int beginning=0x7f0c001a;
         public static final int bottom=0x7f0c0022;
+        public static final int button=0x7f0c0072;
         public static final int buttonPanel=0x7f0c002e;
         public static final int cancel_action=0x7f0c0065;
         public static final int checkbox=0x7f0c003c;
@@ -1826,13 +1825,13 @@ containing a value of this type.
         public static final int customPanel=0x7f0c0039;
         public static final int decor_content_parent=0x7f0c0043;
         public static final int default_activity_button=0x7f0c002a;
-        public static final int delay_settings=0x7f0c0075;
+        public static final int delay_settings=0x7f0c0074;
         public static final int disableHome=0x7f0c000c;
         public static final int distance=0x7f0c005c;
         public static final int edit_query=0x7f0c0047;
         public static final int end=0x7f0c001b;
         public static final int end_padder=0x7f0c0070;
-        public static final int exit=0x7f0c0077;
+        public static final int exit=0x7f0c0076;
         public static final int expand_activities_button=0x7f0c0028;
         public static final int expanded_menu=0x7f0c003b;
         public static final int home=0x7f0c0004;
@@ -1852,7 +1851,7 @@ containing a value of this type.
         public static final int never=0x7f0c0020;
         public static final int none=0x7f0c000e;
         public static final int normal=0x7f0c000a;
-        public static final int online_mode=0x7f0c0076;
+        public static final int online_mode=0x7f0c0075;
         public static final int parentPanel=0x7f0c0030;
         public static final int progress_circular=0x7f0c0005;
         public static final int progress_horizontal=0x7f0c0006;
@@ -1889,6 +1888,7 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0c0066;
         public static final int submenuarrow=0x7f0c003f;
         public static final int submit_area=0x7f0c0050;
+        public static final int switch1=0x7f0c0071;
         public static final int tabMode=0x7f0c000b;
         public static final int text=0x7f0c006e;
         public static final int text2=0x7f0c006c;
@@ -1903,7 +1903,6 @@ containing a value of this type.
         public static final int time=0x7f0c006a;
         public static final int title=0x7f0c002d;
         public static final int title_template=0x7f0c0032;
-        public static final int toggleButton=0x7f0c0071;
         public static final int top=0x7f0c0023;
         public static final int topPanel=0x7f0c0031;
         public static final int up=0x7f0c0008;
