@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.provider.Settings;
 
@@ -19,39 +18,21 @@ import android.provider.Settings;
 public class OnlineMode extends AppCompatActivity {
     Switch wifiswitch;
     Button gpsbutton;
-
-
-
-
- /*   LocationManager locationManager;
-    WifiManager wifiManager;
-    TextView textViewGPS, textViewWIFI;
-
-    boolean GpsStatus;
-*/
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.online_mode);
         final Context context = getApplicationContext();
         final WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
-        final LocationManager lm = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);
-
-
+     //   final LocationManager lm = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);
 
         wifiswitch = (Switch)findViewById(R.id.switch1);
         wifiswitch.setChecked(false);
 
         gpsbutton=(Button)findViewById(R.id.button);
 
-
-
         if(wifi.isWifiEnabled()) wifiswitch.setChecked(true);
         else wifiswitch.setChecked(false);
-
-
-
 
         wifiswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -73,16 +54,6 @@ public class OnlineMode extends AppCompatActivity {
                 Toast.makeText(context, "GPS status changed", Toast.LENGTH_LONG).show();
             }
         });
-/*
-    public void CheckGpsStatus(){
-        locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
-        GpsStatus = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-        if (GpsStatus == true) {
-            textViewGPS.setText("Location Services Is Enabled");
-        } else {
-            textViewGPS.setText("Location Services Is Disabled");
-        }
-    }
-*/
+
     }
 }
