@@ -42,4 +42,5 @@ public class Publisher {
         }
     }
 }
-
+//edw sensores k unregister ap allou
+//block ta alla activities kapws
