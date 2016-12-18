@@ -34,14 +34,18 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
 
         WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);//wifi manager
-        if(wifi.isWifiEnabled()==false){//is it isnt enabled, turn it on and show toast
+        if(!wifi.isWifiEnabled()){//is it isn't enabled, turn it on and show toast
             wifi.setWifiEnabled(true);
             Toast.makeText(context, "Wi-Fi enabled", Toast.LENGTH_SHORT).show();
         }
         else Toast.makeText(context, "Wi-Fi is already enabled", Toast.LENGTH_SHORT).show();//else inform the user
 
+        if(LM.isProviderEnabled(LocationManager.GPS_PROVIDER)){//inform the user that gps was turned on
+            Toast.makeText(context, "GPS is already enabled", Toast.LENGTH_SHORT).show();
+        }
+
 //following piece of code is taken from google settings api
-        if (googleApiClient == null) {//if gps off
+        if (googleApiClient == null){
             googleApiClient = new GoogleApiClient.Builder(context)
                     .addApi(LocationServices.API)
                     .addConnectionCallbacks(this)
@@ -89,14 +93,17 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                 }
             });
         }
-        if((LM.isProviderEnabled(LocationManager.GPS_PROVIDER)==true)){//inform the user that gps was turned on
-            Toast.makeText(context, "GPS enabled", Toast.LENGTH_SHORT).show();
-        }
-    }
 
+    }//oncreate end
+/*
     @Override
     protected void onResume() {
         super.onResume();
+
+    }
+*/
+    @Override
+    public void onBackPressed(){
 
     }
 

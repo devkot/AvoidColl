@@ -60,9 +60,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             finish();
         }
 
+        //switch automatically to online mode
         WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
         LocationManager lm = (LocationManager)getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
-        if(wifi.isWifiEnabled() && lm.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+        if(wifi.isWifiEnabled() && lm.isProviderEnabled(LocationManager.GPS_PROVIDER)){ //if wifi and gps are enabled take the user to online mode
             mSensorManager.unregisterListener(this);
             Intent intent = new Intent(this, OnMode.class);
             this.startActivity(intent);
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 Intent intent1 = new Intent(this, DelaySettings.class); //go to delay settings
                 this.startActivity(intent1);
                 break;
-            case R.id.on_mode:
+            case R.id.on_mode: //switch manually
                 mSensorManager.unregisterListener(this);
                 Intent intent2 = new Intent(this, OnMode.class);
                 this.startActivity(intent2);

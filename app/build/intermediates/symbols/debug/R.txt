@@ -1104,7 +1104,7 @@ int id email 0x7f0e0036
 int id end 0x7f0e0039
 int id end_padder 0x7f0e00f7
 int id end_text 0x7f0e00bc
-int id exit 0x7f0e0104
+int id exit 0x7f0e0103
 int id expand_activities_button 0x7f0e0073
 int id expanded_controller_layout 0x7f0e00ae
 int id expanded_menu 0x7f0e0086
@@ -1177,8 +1177,7 @@ int id none 0x7f0e001c
 int id normal 0x7f0e0018
 int id omnibox_title_section 0x7f0e004d
 int id omnibox_url_section 0x7f0e004e
-int id on_mode 0x7f0e0103
-int id online_mode 0x7f0e0102
+int id on_mode 0x7f0e0102
 int id parentPanel 0x7f0e007b
 int id place_autocomplete_clear_button 0x7f0e00fa
 int id place_autocomplete_powered_by_google 0x7f0e00fc

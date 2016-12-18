@@ -8,12 +8,12 @@
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
-        "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
         "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",

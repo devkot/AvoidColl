@@ -3240,7 +3240,7 @@ containing a value of this type.
         public static final int end=0x7f0e0039;
         public static final int end_padder=0x7f0e00f7;
         public static final int end_text=0x7f0e00bc;
-        public static final int exit=0x7f0e0104;
+        public static final int exit=0x7f0e0103;
         public static final int expand_activities_button=0x7f0e0073;
         public static final int expanded_controller_layout=0x7f0e00ae;
         public static final int expanded_menu=0x7f0e0086;
@@ -3313,8 +3313,7 @@ containing a value of this type.
         public static final int normal=0x7f0e0018;
         public static final int omnibox_title_section=0x7f0e004d;
         public static final int omnibox_url_section=0x7f0e004e;
-        public static final int on_mode=0x7f0e0103;
-        public static final int online_mode=0x7f0e0102;
+        public static final int on_mode=0x7f0e0102;
         public static final int parentPanel=0x7f0e007b;
         public static final int place_autocomplete_clear_button=0x7f0e00fa;
         public static final int place_autocomplete_powered_by_google=0x7f0e00fc;
