@@ -9,9 +9,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
+import android.location.GpsStatus;
+import android.location.LocationManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.net.wifi.WifiManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.hardware.SensorManager;
@@ -55,6 +58,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         notification.setAutoCancel(true); //deletes notification on main app screen
         if (!isTaskRoot()) { //prevent additional tasks from opening on intent click
             finish();
+        }
+
+        WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
+        LocationManager lm = (LocationManager)getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+        if(wifi.isWifiEnabled() && lm.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+            mSensorManager.unregisterListener(this);
+            Intent intent = new Intent(this, OnlineMode.class);
+            this.startActivity(intent);
         }
     }
 
@@ -110,6 +121,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 mSensorManager.unregisterListener(this);
                 Intent intent2 = new Intent(this, OnlineMode.class);
                 this.startActivity(intent2);
+                break;
+            case R.id.on_mode:
+                mSensorManager.unregisterListener(this);
+                Intent intent3 = new Intent(this, OnMode.class);
+                this.startActivity(intent3);
                 break;
             case R.id.exit:
                 finish();
