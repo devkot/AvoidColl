@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         LocationManager lm = (LocationManager)getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
         if(wifi.isWifiEnabled() && lm.isProviderEnabled(LocationManager.GPS_PROVIDER)){
             mSensorManager.unregisterListener(this);
-            Intent intent = new Intent(this, OnlineMode.class);
+            Intent intent = new Intent(this, OnMode.class);
             this.startActivity(intent);
         }
     }
