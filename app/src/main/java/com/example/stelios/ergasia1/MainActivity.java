@@ -117,15 +117,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 Intent intent1 = new Intent(this, DelaySettings.class); //go to delay settings
                 this.startActivity(intent1);
                 break;
-            case R.id.online_mode:
-                mSensorManager.unregisterListener(this);
-                Intent intent2 = new Intent(this, OnlineMode.class);
-                this.startActivity(intent2);
-                break;
             case R.id.on_mode:
                 mSensorManager.unregisterListener(this);
-                Intent intent3 = new Intent(this, OnMode.class);
-                this.startActivity(intent3);
+                Intent intent2 = new Intent(this, OnMode.class);
+                this.startActivity(intent2);
                 break;
             case R.id.exit:
                 finish();

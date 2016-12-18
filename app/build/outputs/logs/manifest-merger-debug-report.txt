@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml
@@ -56,7 +56,7 @@ ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:13:5-75
 	android:name
 		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:13:22-73
 application
-ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:16:5-54:19
+ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:16:5-50:19
 MERGED from [com.google.android.gms:play-services:10.0.1] H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\10.0.1\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.0.1\AndroidManifest.xml:23:5-27:19
 MERGED from [com.google.android.gms:play-services-analytics:10.0.1] H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\AndroidManifest.xml:26:5-19
@@ -165,22 +165,14 @@ ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:41:9-44:52
 		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:43:13-63
 	android:name
 		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:42:13-42
-activity#com.example.stelios.ergasia1.OnlineMode
+activity#com.example.stelios.ergasia1.OnMode
 ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:45:9-48:52
 	android:screenOrientation
 		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:48:13-49
 	android:configChanges
 		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:47:13-63
 	android:name
-		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:46:13-39
-activity#com.example.stelios.ergasia1.OnMode
-ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:49:9-52:52
-	android:screenOrientation
-		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:52:13-49
-	android:configChanges
-		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:51:13-63
-	android:name
-		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:50:13-35
+		ADDED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml:46:13-35
 uses-sdk
 INJECTED from H:\AS_Projects\avoidcoll\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.gms:play-services:10.0.1] H:\AS_Projects\avoidcoll\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\10.0.1\AndroidManifest.xml:4:5-42

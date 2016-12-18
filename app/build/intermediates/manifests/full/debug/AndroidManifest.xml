@@ -62,10 +62,6 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.stelios.ergasia1.OnlineMode"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.example.stelios.ergasia1.OnMode"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />

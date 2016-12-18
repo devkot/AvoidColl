@@ -1,6 +1,5 @@
 package com.example.stelios.ergasia1;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.IntentSender;
 import android.location.LocationManager;
@@ -23,44 +22,40 @@ import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 
 //google settings api documentation
-
-//implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener
 public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
-    private GoogleApiClient googleApiClient;
-
+    private GoogleApiClient googleApiClient; //google api for gps
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.on_mode);
         Context context = getApplicationContext();
-        LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);
 
-        WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
-        if(wifi.isWifiEnabled()==false){
+        LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
+
+        WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);//wifi manager
+        if(wifi.isWifiEnabled()==false){//is it isnt enabled, turn it on and show toast
             wifi.setWifiEnabled(true);
             Toast.makeText(context, "Wi-Fi enabled", Toast.LENGTH_SHORT).show();
         }
-        else Toast.makeText(context, "Wi-Fi is already enabled", Toast.LENGTH_SHORT).show();
+        else Toast.makeText(context, "Wi-Fi is already enabled", Toast.LENGTH_SHORT).show();//else inform the user
 
-
-        if (googleApiClient == null) {
+//following piece of code is taken from google settings api
+        if (googleApiClient == null) {//if gps off
             googleApiClient = new GoogleApiClient.Builder(context)
                     .addApi(LocationServices.API)
                     .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this).build();
             googleApiClient.connect();
 
-            LocationRequest locationRequest = LocationRequest.create();
+            LocationRequest locationRequest = LocationRequest.create();//create request
             locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);//use gps,wifi (and network but it doesn't have permissions)
             locationRequest.setInterval(30 * 1000);
             locationRequest.setFastestInterval(5 * 1000);
             LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
                     .addLocationRequest(locationRequest);
 
-            //**************************
-            builder.setAlwaysShow(true); //this is the key ingredient
-            //**************************
+            builder.setAlwaysShow(true); //it was boolean show in google doc
 
             PendingResult<LocationSettingsResult> result =
                     LocationServices.SettingsApi.checkLocationSettings(googleApiClient, builder.build());
@@ -92,8 +87,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                             break;
                     }
                 }
-            });             }
-        if((LM.isProviderEnabled(LocationManager.GPS_PROVIDER)==true)){
+            });
+        }
+        if((LM.isProviderEnabled(LocationManager.GPS_PROVIDER)==true)){//inform the user that gps was turned on
             Toast.makeText(context, "GPS enabled", Toast.LENGTH_SHORT).show();
         }
     }
