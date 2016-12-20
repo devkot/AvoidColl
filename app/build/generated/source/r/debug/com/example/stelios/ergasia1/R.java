@@ -3162,7 +3162,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0e008d;
         public static final int action_mode_bar_stub=0x7f0e008c;
         public static final int action_mode_close_button=0x7f0e0071;
-        public static final int action_settings=0x7f0e0100;
+        public static final int action_settings=0x7f0e0103;
         public static final int activity_chooser_view_content=0x7f0e0072;
         public static final int activity_main=0x7f0e00a5;
         public static final int ad_container=0x7f0e00b4;
@@ -3228,7 +3228,7 @@ containing a value of this type.
         public static final int dark=0x7f0e0029;
         public static final int decor_content_parent=0x7f0e008e;
         public static final int default_activity_button=0x7f0e0075;
-        public static final int delay_settings=0x7f0e0101;
+        public static final int delay_settings=0x7f0e0104;
         public static final int demote_common_words=0x7f0e0049;
         public static final int demote_rfc822_hostnames=0x7f0e004a;
         public static final int disableHome=0x7f0e001a;
@@ -3240,7 +3240,8 @@ containing a value of this type.
         public static final int end=0x7f0e0039;
         public static final int end_padder=0x7f0e00f7;
         public static final int end_text=0x7f0e00bc;
-        public static final int exit=0x7f0e0103;
+        public static final int exit=0x7f0e0106;
+        public static final int exit2=0x7f0e0102;
         public static final int expand_activities_button=0x7f0e0073;
         public static final int expanded_controller_layout=0x7f0e00ae;
         public static final int expanded_menu=0x7f0e0086;
@@ -3283,6 +3284,7 @@ containing a value of this type.
         public static final int media_actions=0x7f0e00f0;
         public static final int middle=0x7f0e003a;
         public static final int monochrome=0x7f0e006d;
+        public static final int mqtt_settings=0x7f0e0100;
         public static final int mr_art=0x7f0e00df;
         public static final int mr_chooser_list=0x7f0e00d4;
         public static final int mr_chooser_route_desc=0x7f0e00d7;
@@ -3311,9 +3313,10 @@ containing a value of this type.
         public static final int never=0x7f0e0043;
         public static final int none=0x7f0e001c;
         public static final int normal=0x7f0e0018;
+        public static final int offline=0x7f0e0101;
         public static final int omnibox_title_section=0x7f0e004d;
         public static final int omnibox_url_section=0x7f0e004e;
-        public static final int on_mode=0x7f0e0102;
+        public static final int on_mode=0x7f0e0105;
         public static final int parentPanel=0x7f0e007b;
         public static final int place_autocomplete_clear_button=0x7f0e00fa;
         public static final int place_autocomplete_powered_by_google=0x7f0e00fc;
@@ -3483,7 +3486,8 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040039;
     }
     public static final class menu {
-        public static final int option_menu=0x7f100000;
+        public static final int online_menu=0x7f100000;
+        public static final int option_menu=0x7f100001;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

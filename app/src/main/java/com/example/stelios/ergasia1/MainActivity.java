@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_FASTEST); //fastest used to show the difference between delay settings
         mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_FASTEST);
         mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_FASTEST);
-        Init.getInstance().setConnectivityListener(this);
+        Init.getInstance().setConnectivityListener(this);//register listener through init
     }
 
     @Override

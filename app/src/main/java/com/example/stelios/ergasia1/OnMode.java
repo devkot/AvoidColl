@@ -3,6 +3,7 @@ package com.example.stelios.ergasia1;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.IntentSender;
 import android.location.LocationManager;
 import android.net.wifi.WifiManager;
@@ -10,6 +11,9 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -107,6 +111,32 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     protected void onResume() {
         super.onResume();
         Init.getInstance().setConnectivityListener(this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater(); //create menu
+        inflater.inflate(R.menu.online_menu, menu); //get resource
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){ //switch classes
+            case R.id.mqtt_settings:
+             //   Intent intent = new Intent(this, Settings.class); //go to threshold settings
+             //   this.startActivity(intent);
+                break;
+            case R.id.offline:
+                WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
+                wifi.setWifiEnabled(false);//broadcaster will terminate activity
+                break;
+            case R.id.exit2:
+                finish();
+                System.exit(0); //exit app without dialog
+                break;
+        }
+        return false;
     }
 
     @Override
