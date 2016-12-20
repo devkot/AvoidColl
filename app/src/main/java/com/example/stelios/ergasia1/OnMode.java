@@ -1,6 +1,8 @@
 package com.example.stelios.ergasia1;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.IntentSender;
 import android.location.LocationManager;
 import android.net.wifi.WifiManager;
@@ -22,17 +24,16 @@ import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 
 //google settings api documentation
-public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private GoogleApiClient googleApiClient; //google api for gps
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.on_mode);
         Context context = getApplicationContext();
-
         LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
-
         WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);//wifi manager
         if(!wifi.isWifiEnabled()){//is it isn't enabled, turn it on and show toast
             wifi.setWifiEnabled(true);
@@ -95,18 +96,30 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         }
 
     }//oncreate end
-/*
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
-
+        Init.getInstance().setConnectivityListener(this);
     }
-*/
+
     @Override
-    public void onBackPressed(){
-
+    public void onBackPressed() { //exit app through back button
+        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit") //build dialog
+                .setMessage("Are you sure you want to exit?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) { //exit on click
+                        finish();
+                        System.exit(0);
+                    }
+                }).setNegativeButton("No", null).show();
     }
-
     @Override
     public void onConnected(@Nullable Bundle bundle) {
     }
@@ -117,4 +130,10 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
     }
 
+    @Override
+    public void onNetworkConnectionChanged(boolean isConnected) {
+        if(isConnected==false){
+            finish();
+        }
+    }
 }

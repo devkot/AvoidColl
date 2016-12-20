@@ -592,12 +592,12 @@
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_light.png",
-        "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_light.png"
-    },
-    {
         "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_30_grey600_36.png",
         "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_grey600_36.png"
+    },
+    {
+        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_light.png",
+        "source": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_light.png"
     },
     {
         "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_19_light.png",

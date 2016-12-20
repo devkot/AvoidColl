@@ -25,7 +25,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements SensorEventListener{
+public class MainActivity extends AppCompatActivity implements SensorEventListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private SensorManager mSensorManager; //set sensor manager
     private Sensor mSpeed, mProximity, mLight; //declare sensors
     private float last_x = 0, last_y = 0, last_z = 0; //initialize accelerometer speed values
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if (!isTaskRoot()) { //prevent additional tasks from opening on intent click
             finish();
         }
-
+/*
         //switch automatically to online mode
         WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
         LocationManager lm = (LocationManager)getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             mSensorManager.unregisterListener(this);
             Intent intent = new Intent(this, OnMode.class);
             this.startActivity(intent);
-        }
+        }*/
     }
 
     public void Notitriggered(String text){                       //create notification
@@ -185,6 +185,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         mSensorManager.registerListener(this, mSpeed, SensorManager.SENSOR_DELAY_FASTEST); //fastest used to show the difference between delay settings
         mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_FASTEST);
         mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_FASTEST);
+        Init.getInstance().setConnectivityListener(this);
     }
     @Override
     public void onBackPressed() { //exit app through back button
@@ -201,5 +202,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onStop () {
         super.onStop();
+    }
+
+    @Override
+    public void onNetworkConnectionChanged(boolean isConnected) {
+        if (isConnected==true){
+            mSensorManager.unregisterListener(this);
+            Intent intent = new Intent(this, OnMode.class);
+            this.startActivity(intent);
+        }
     }
 }
