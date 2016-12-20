@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mqtt_settings"
+        android:title="MQTT settings"
+        />
+    <item android:id="@+id/offline"
+        android:title="Go Offline"
+        />
+    <item android:id="@+id/exit2"
+        android:title="Quit app"
+        />
+</menu>

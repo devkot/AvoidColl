@@ -123,11 +123,11 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){ //switch classes
-            case R.id.mqtt_settings:
-             //   Intent intent = new Intent(this, Settings.class); //go to threshold settings
+            case R.id.mqtt_settings://go to mqtt settings
+             //   Intent intent = new Intent(this, Settings.class);//allagh auta
              //   this.startActivity(intent);
                 break;
-            case R.id.offline:
+            case R.id.offline: //button to go offline
                 WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
                 wifi.setWifiEnabled(false);//broadcaster will terminate activity
                 break;
