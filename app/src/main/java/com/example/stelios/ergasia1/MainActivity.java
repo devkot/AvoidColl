@@ -9,12 +9,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
-import android.location.GpsStatus;
-import android.location.LocationManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.net.wifi.WifiManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.hardware.SensorManager;
@@ -59,15 +56,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if (!isTaskRoot()) { //prevent additional tasks from opening on intent click
             finish();
         }
-/*
-        //switch automatically to online mode
-        WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
-        LocationManager lm = (LocationManager)getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
-        if(wifi.isWifiEnabled() && lm.isProviderEnabled(LocationManager.GPS_PROVIDER)){ //if wifi and gps are enabled take the user to online mode
-            mSensorManager.unregisterListener(this);
+
+        if(ConnectivityReceiver.isConnected()==true){//if wifi is on when app is launched --> online mode
+            mSensorManager.unregisterListener(this);//unregister listener to stop offline calculations
             Intent intent = new Intent(this, OnMode.class);
             this.startActivity(intent);
-        }*/
+        }
     }
 
     public void Notitriggered(String text){                       //create notification
@@ -177,8 +171,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onPause() {
         super.onPause();
-    //  mSensorManager.unregisterListener(this); //Uncomment if we want to release the sensors for less power consumption
+        //mSensorManager.unregisterListener(this); //Uncomment if we want to release the sensors for less power consumption
     }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -187,6 +182,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_FASTEST);
         Init.getInstance().setConnectivityListener(this);
     }
+
     @Override
     public void onBackPressed() { //exit app through back button
         new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit") //build dialog
@@ -207,7 +203,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onNetworkConnectionChanged(boolean isConnected) {
         if (isConnected==true){
-            mSensorManager.unregisterListener(this);
+            mSensorManager.unregisterListener(this);//unregister listener to stop offline calculations
             Intent intent = new Intent(this, OnMode.class);
             this.startActivity(intent);
         }

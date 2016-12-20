@@ -6,7 +6,7 @@ import android.app.Application;
  * Created by Stelios on 20/12/2016.
  */
 
-public class Init extends Application {
+public class Init extends Application {//used to implement the broadcast receiver
     private static Init mInstance;
 
     @Override

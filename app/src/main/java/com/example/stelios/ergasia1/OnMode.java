@@ -45,6 +45,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
             Toast.makeText(context, "GPS is already enabled", Toast.LENGTH_SHORT).show();
         }
 
+
 //following piece of code is taken from google settings api
         if (googleApiClient == null){
             googleApiClient = new GoogleApiClient.Builder(context)
@@ -131,8 +132,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     }
 
     @Override
-    public void onNetworkConnectionChanged(boolean isConnected) {
+    public void onNetworkConnectionChanged(boolean isConnected) { //on connection change we terminate the activity
         if(isConnected==false){
+            Toast.makeText(getApplicationContext(), "No internet connectivity, Online Mode terminating", Toast.LENGTH_SHORT).show();
             finish();
         }
     }
