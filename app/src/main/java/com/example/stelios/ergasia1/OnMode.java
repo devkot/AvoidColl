@@ -27,9 +27,12 @@ import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 
+import java.util.UUID;
+
 //google settings api documentation
 public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private GoogleApiClient googleApiClient; //google api for gps
+
 
 
     @Override
@@ -37,6 +40,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         super.onCreate(savedInstanceState);
         setContentView(R.layout.on_mode);
         Context context = getApplicationContext();
+
+      //  String DeviceID=UUID.randomUUID().toString();
+
         LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
         WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);//wifi manager
         if(!wifi.isWifiEnabled()){//is it isn't enabled, turn it on and show toast
@@ -146,11 +152,14 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) { //exit on click
+                        WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
+                        wifi.setWifiEnabled(false);//broadcaster will terminate activity
                         finish();
                         System.exit(0);
                     }
                 }).setNegativeButton("No", null).show();
     }
+
     @Override
     public void onConnected(@Nullable Bundle bundle) {
     }

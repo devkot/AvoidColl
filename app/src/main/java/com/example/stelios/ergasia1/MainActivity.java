@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             finish();
         }
 
-        if(ConnectivityReceiver.isConnected()==true){//if wifi is on when app is launched --> online mode
+        if(ConnectivityReceiver.isConnected()){//if wifi is on when app is launched --> online mode
             mSensorManager.unregisterListener(this);//unregister listener to stop offline calculations
             Intent intent = new Intent(this, OnMode.class);
             this.startActivity(intent);
@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onNetworkConnectionChanged(boolean isConnected) {
-        if (isConnected==true){
+        if (isConnected){
             mSensorManager.unregisterListener(this);//unregister listener to stop offline calculations
             Intent intent = new Intent(this, OnMode.class);
             this.startActivity(intent);
