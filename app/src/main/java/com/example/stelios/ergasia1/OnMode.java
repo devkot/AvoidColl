@@ -40,6 +40,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         Context context = getApplicationContext();
         String sensordata[] = {String.valueOf(MainActivity.Ax),String.valueOf(MainActivity.Ay),String.valueOf(MainActivity.Az)};
         Publisher.main(sensordata);
+        Subscriber.main(sensordata);
         //String DeviceID=UUID.randomUUID().toString();
 
         LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
