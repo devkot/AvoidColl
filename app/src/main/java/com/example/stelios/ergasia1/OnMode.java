@@ -39,7 +39,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         setContentView(R.layout.on_mode);
         Context context = getApplicationContext();
         String sensordata[] = {String.valueOf(MainActivity.Ax),String.valueOf(MainActivity.Ay),String.valueOf(MainActivity.Az)};
-        Publisher.main(sensordata);
+
         //String DeviceID=UUID.randomUUID().toString();
 
         LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
@@ -104,6 +104,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                 }
             });
         }
+
+        Publisher.main(sensordata);
+        Subscriber.main(sensordata);
 
     }//oncreate end
 
