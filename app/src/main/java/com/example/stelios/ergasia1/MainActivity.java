@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     TextView acceleration, distance, light; //declare textview
     NotificationCompat.Builder notification; //declare notification builder
     private static final int id = 1; //initialize notification id
+    static float Ax=0, Ay=0, Az=0;
 
     @Override
     public final void onCreate(Bundle savedInstanceState) {
@@ -130,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onSensorChanged(SensorEvent event) { //called when a sensor's value changes
         long curTime = System.currentTimeMillis();
         if (event.sensor.getType()==Sensor.TYPE_LINEAR_ACCELERATION){   //linear acceleration used to filter out gravity
-
+            Ax = event.values[0]; Ay = event.values[1]; Az = event.values[2];
             if ((curTime - lastUpdateA) > DelaySettings.delayA) { //checks delay
                 acceleration.setText("Linear Acceleration\n" + "X: " + event.values[0] + " m/s^2" + "\nY: " + event.values[1] + " m/s^2" + "\nZ: " + event.values[2] + " m/s^2");
                 float x = event.values[0]; float y = event.values[1]; float z = event.values[2]; //accelerometer values

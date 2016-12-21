@@ -10,7 +10,7 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 public class Publisher {
     public static void main(String[] args) {
         String topic = "MQTT Example";
-        String content = "Message from MqttPublishSample ";
+        String content = args[0];
         int qos = 2;
         String broker = "tcp://localhost:1883";
         String clientId = "JavaSamplePublisher";
@@ -41,6 +41,8 @@ public class Publisher {
             me.printStackTrace();
         }
     }
+
+
 }
 //edw sensores k unregister ap allou
 //block ta alla activities kapws

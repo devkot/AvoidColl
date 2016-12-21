@@ -33,15 +33,14 @@ import java.util.UUID;
 public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private GoogleApiClient googleApiClient; //google api for gps
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.on_mode);
         Context context = getApplicationContext();
-
-      //  String DeviceID=UUID.randomUUID().toString();
+        String sensordata[] = {String.valueOf(MainActivity.Ax),String.valueOf(MainActivity.Ay),String.valueOf(MainActivity.Az)};
+        Publisher.main(sensordata);
+        //String DeviceID=UUID.randomUUID().toString();
 
         LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
         WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);//wifi manager
