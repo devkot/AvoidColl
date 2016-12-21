@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
+        "outputFile": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 211
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 319
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 442
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 557
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 668
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 750
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 856
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 986
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 1069
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1149
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1235
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1345
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1457
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1560
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1671
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1778
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1885
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 2007
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 2106
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 2180
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -391,7 +391,7 @@
                     "endOffset": 2260
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -410,7 +410,7 @@
                     "endOffset": 2372
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -429,7 +429,7 @@
                     "endOffset": 2463
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -448,7 +448,7 @@
                     "endOffset": 2580
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -467,7 +467,7 @@
                     "endOffset": 2666
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -486,7 +486,7 @@
                     "endOffset": 2830
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -505,7 +505,7 @@
                     "endOffset": 2945
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -524,7 +524,7 @@
                     "endOffset": 3063
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -543,7 +543,7 @@
                     "endOffset": 3188
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -562,7 +562,7 @@
                     "endOffset": 3291
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -581,7 +581,7 @@
                     "endOffset": 3396
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -600,7 +600,7 @@
                     "endOffset": 3475
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -619,7 +619,7 @@
                     "endOffset": 3572
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -638,7 +638,7 @@
                     "endOffset": 3669
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -657,7 +657,7 @@
                     "endOffset": 3777
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -676,7 +676,7 @@
                     "endOffset": 3859
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -695,7 +695,7 @@
                     "endOffset": 3994
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -714,7 +714,7 @@
                     "endOffset": 4132
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -733,7 +733,7 @@
                     "endOffset": 4231
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -752,7 +752,7 @@
                     "endOffset": 4310
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 0,
@@ -771,7 +771,7 @@
                     "endOffset": 4383
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 0,
@@ -790,7 +790,7 @@
                     "endOffset": 4468
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 0,
@@ -809,7 +809,7 @@
                     "endOffset": 4571
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 0,
@@ -828,7 +828,7 @@
                     "endOffset": 4674
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 0,
@@ -847,7 +847,7 @@
                     "endOffset": 4776
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 0,
@@ -866,7 +866,7 @@
                     "endOffset": 4877
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 0,
@@ -885,7 +885,7 @@
                     "endOffset": 4980
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 0,
@@ -904,7 +904,7 @@
                     "endOffset": 5056
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 0,
@@ -923,7 +923,7 @@
                     "endOffset": 5167
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 0,
@@ -942,7 +942,7 @@
                     "endOffset": 5273
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 0,
@@ -961,7 +961,7 @@
                     "endOffset": 5373
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 0,
@@ -980,7 +980,7 @@
                     "endOffset": 5486
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 0,
@@ -999,7 +999,7 @@
                     "endOffset": 5647
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 0,
@@ -1018,7 +1018,7 @@
                     "endOffset": 5778
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 0,
@@ -1037,7 +1037,7 @@
                     "endOffset": 5911
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 0,
@@ -1056,7 +1056,7 @@
                     "endOffset": 6007
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 0,
@@ -1075,7 +1075,7 @@
                     "endOffset": 6103
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 0,
@@ -1094,7 +1094,7 @@
                     "endOffset": 6210
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 0,
@@ -1113,7 +1113,7 @@
                     "endOffset": 6297
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 0,
@@ -1132,7 +1132,7 @@
                     "endOffset": 6405
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -1151,7 +1151,7 @@
                     "endOffset": 6617
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -1170,7 +1170,7 @@
                     "endOffset": 6749
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -1189,7 +1189,7 @@
                     "endOffset": 6860
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -1208,7 +1208,7 @@
                     "endOffset": 7090
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -1227,7 +1227,7 @@
                     "endOffset": 7225
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -1246,7 +1246,7 @@
                     "endOffset": 7367
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -1265,7 +1265,7 @@
                     "endOffset": 7591
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -1284,7 +1284,7 @@
                     "endOffset": 7828
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -1303,7 +1303,7 @@
                     "endOffset": 7942
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -1322,7 +1322,7 @@
                     "endOffset": 8158
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -1341,7 +1341,7 @@
                     "endOffset": 8296
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 0,
@@ -1360,7 +1360,7 @@
                     "endOffset": 8515
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 0,
@@ -1379,7 +1379,7 @@
                     "endOffset": 8724
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 0,
@@ -1398,7 +1398,7 @@
                     "endOffset": 8827
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 0,
@@ -1417,7 +1417,7 @@
                     "endOffset": 8924
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 0,
@@ -1436,7 +1436,7 @@
                     "endOffset": 9037
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 0,
@@ -1455,7 +1455,7 @@
                     "endOffset": 9173
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -1474,7 +1474,7 @@
                     "endOffset": 9282
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -1493,7 +1493,7 @@
                     "endOffset": 9394
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -1512,7 +1512,7 @@
                     "endOffset": 9497
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -1531,7 +1531,7 @@
                     "endOffset": 9602
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -1550,7 +1550,7 @@
                     "endOffset": 9697
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -1569,7 +1569,7 @@
                     "endOffset": 9771
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,
@@ -1588,7 +1588,7 @@
                     "endOffset": 9870
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1607,7 +1607,7 @@
                     "endOffset": 9982
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1626,7 +1626,7 @@
                     "endOffset": 10067
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1645,7 +1645,7 @@
                     "endOffset": 10167
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1664,7 +1664,7 @@
                     "endOffset": 10286
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1683,7 +1683,7 @@
                     "endOffset": 10383
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1702,7 +1702,7 @@
                     "endOffset": 10478
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1721,7 +1721,7 @@
                     "endOffset": 10573
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1740,7 +1740,7 @@
                     "endOffset": 10669
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1759,7 +1759,7 @@
                     "endOffset": 10789
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1778,7 +1778,7 @@
                     "endOffset": 10903
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1797,7 +1797,7 @@
                     "endOffset": 10987
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1816,7 +1816,7 @@
                     "endOffset": 11071
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1835,7 +1835,7 @@
                     "endOffset": 11168
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1854,7 +1854,7 @@
                     "endOffset": 11255
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1873,7 +1873,7 @@
                     "endOffset": 11351
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1892,7 +1892,7 @@
                     "endOffset": 11462
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -1911,7 +1911,7 @@
                     "endOffset": 11562
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -1930,7 +1930,7 @@
                     "endOffset": 11648
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1949,7 +1949,7 @@
                     "endOffset": 11749
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-fr\\values-fr.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-fr/values-fr.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -1968,7 +1968,7 @@
                     "endOffset": 11897
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 0,
@@ -1987,7 +1987,7 @@
                     "endOffset": 11996
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 0,
@@ -2006,7 +2006,7 @@
                     "endOffset": 12104
                 },
                 "from": {
-                    "file": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\10.0.1\\res\\values-fr\\values.xml",
+                    "file": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.0.1/res/values-fr/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
