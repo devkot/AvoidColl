@@ -5,6 +5,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.location.LocationManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -14,6 +18,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -30,15 +36,26 @@ import com.google.android.gms.location.LocationSettingsStatusCodes;
 import java.util.UUID;
 
 //google settings api documentation
-public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener {
+public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener, SensorEventListener {
     private GoogleApiClient googleApiClient; //google api for gps
+    private SensorManager oSensorManager; //set sensor manager
+    private Sensor oSpeed, oProximity, oLight; //declare sensors
+    private Switch myswitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.on_mode);
         Context context = getApplicationContext();
-        String sensordata[] = {String.valueOf(MainActivity.Ax),String.valueOf(MainActivity.Ay),String.valueOf(MainActivity.Az)};
+        myswitch=(Switch)findViewById(R.id.switch2);
+        myswitch.setChecked(false);
+
+        oSensorManager=(SensorManager)getSystemService(Context.SENSOR_SERVICE);
+        oSpeed = oSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
+        oProximity = oSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        oLight = oSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+
+
 
         //String DeviceID=UUID.randomUUID().toString();
 
@@ -103,10 +120,25 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                     }
                 }
             });
+
+
         }
 
-        Publisher.main(sensordata);
-        Subscriber.main(sensordata);
+        myswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if(isChecked){
+                    oSensorManager.registerListener(OnMode.this, oSpeed, SensorManager.SENSOR_DELAY_NORMAL);
+                    oSensorManager.registerListener(OnMode.this, oLight, SensorManager.SENSOR_DELAY_NORMAL);
+                    oSensorManager.registerListener(OnMode.this, oProximity, SensorManager.SENSOR_DELAY_NORMAL);
+                }else{
+                    oSensorManager.unregisterListener(OnMode.this);
+                }
+
+            }
+        });
+
 
     }//oncreate end
 
@@ -119,6 +151,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     protected void onResume() {
         super.onResume();
         Init.getInstance().setConnectivityListener(this);
+       // oSensorManager.registerListener(this, oSpeed, SensorManager.SENSOR_DELAY_NORMAL);
+       // oSensorManager.registerListener(this, oLight, SensorManager.SENSOR_DELAY_NORMAL);
+     //   oSensorManager.registerListener(this, oProximity, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
@@ -178,5 +213,27 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
             Toast.makeText(getApplicationContext(), "No internet connectivity, Online Mode terminating", Toast.LENGTH_SHORT).show();
             finish();
         }
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+            if (event.sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION) {
+                String ac_data[] = {String.valueOf(event.values[0]), String.valueOf(event.values[1]), String.valueOf(event.values[2])};
+                Publisher.main(ac_data);
+            }
+            if (event.sensor.getType() == Sensor.TYPE_PROXIMITY) {
+                String prox_data[] = {String.valueOf(event.values[0])};
+                Publisher.main(prox_data);
+            }
+            if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
+                String light_data[] = {String.valueOf(event.values[0])};
+                Publisher.main(light_data);
+            }
+
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
     }
 }
