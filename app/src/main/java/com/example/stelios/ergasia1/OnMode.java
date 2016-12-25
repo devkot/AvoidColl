@@ -41,6 +41,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     private SensorManager oSensorManager; //set sensor manager
     private Sensor oSpeed, oProximity, oLight; //declare sensors
     private Switch myswitch;
+    String DeviceID=UUID.randomUUID().toString();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +58,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
 
 
-        //String DeviceID=UUID.randomUUID().toString();
+
 
         LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
         WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);//wifi manager
@@ -218,16 +219,15 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     @Override
     public void onSensorChanged(SensorEvent event) {
             if (event.sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION) {
-                String ac_data[] = {String.valueOf(event.values[0]), String.valueOf(event.values[1]), String.valueOf(event.values[2])};
-                Publisher.main(ac_data);
+                Publisher.main(String.valueOf(event.values[0]),"Accelerometer",DeviceID);
+                Publisher.main(String.valueOf(event.values[1]),"Accelerometer",DeviceID);
+                Publisher.main(String.valueOf(event.values[2]),"Accelerometer",DeviceID);
             }
             if (event.sensor.getType() == Sensor.TYPE_PROXIMITY) {
-                String prox_data[] = {String.valueOf(event.values[0])};
-                Publisher.main(prox_data);
+                Publisher.main(String.valueOf(event.values[0]),"Proximity",DeviceID);
             }
             if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
-                String light_data[] = {String.valueOf(event.values[0])};
-                Publisher.main(light_data);
+                Publisher.main(String.valueOf(event.values[0]),"Light",DeviceID);
             }
 
     }

@@ -17,7 +17,7 @@ public class Subscriber implements MqttCallback{
     public static void main(String[] args) {
         String topic = "MQTT Example";
         int qos = 2;
-        String broker = "tcp://192.168.1.9:1883";
+        String broker = "tcp://192.168.1.10:1883";
         String clientId = "JavaSampleSubscriber";
         MemoryPersistence persistence = new MemoryPersistence();
         try {
