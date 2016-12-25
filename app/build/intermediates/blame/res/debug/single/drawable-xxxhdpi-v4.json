@@ -204,12 +204,12 @@
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_collapse_00001.png"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_48.png",
@@ -236,12 +236,12 @@
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xxxhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_36.png",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_36.png"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_play_light.png",
@@ -372,20 +372,20 @@
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_collapse_00003.png"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00011.png",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_expand_00011.png"
-    },
-    {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00007.png",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_expand_00007.png"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_10_white_24.png",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xxxhdpi-v4/quantum_ic_replay_10_white_24.png"
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00011.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_expand_00011.png"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00009.png",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xxxhdpi-v4/ic_collapse_00009.png"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_10_white_24.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xxxhdpi-v4/quantum_ic_replay_10_white_24.png"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00001.png",

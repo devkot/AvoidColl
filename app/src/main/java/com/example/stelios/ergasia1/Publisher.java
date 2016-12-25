@@ -12,7 +12,7 @@ public class Publisher {
         String topic = top;
         String content = data;
         int qos = 2;
-        String broker = "tcp://192.168.1.10:1883";
+        String broker = MQTTSettings.str;
         String clientId = id;
         MemoryPersistence persistence = new MemoryPersistence();
         try {

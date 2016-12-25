@@ -60,6 +60,8 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
 
 
+
+
         LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
         WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);//wifi manager
         if(!wifi.isWifiEnabled()){//is it isn't enabled, turn it on and show toast
@@ -168,8 +170,8 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){ //switch classes
             case R.id.mqtt_settings://go to mqtt settings
-             //   Intent intent = new Intent(this, Settings.class);//allagh auta
-             //   this.startActivity(intent);
+                Intent intent = new Intent(this, MQTTSettings.class);
+                this.startActivity(intent);
                 break;
             case R.id.offline: //button to go offline
                 WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);

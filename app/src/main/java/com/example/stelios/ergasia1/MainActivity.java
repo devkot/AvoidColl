@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         distance = (TextView)findViewById(R.id.distance);
         light = (TextView)findViewById(R.id.light);
 
+
         if(mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION) == null) //check if the device has sensor
             acceleration.setText("Your device doesn't have an accelerometer");
         if(mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY) == null) //check if the device has sensor
