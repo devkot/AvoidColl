@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
+import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -14,6 +15,7 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,6 +23,7 @@ import android.view.MenuItem;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -47,37 +50,33 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         super.onCreate(savedInstanceState);
         setContentView(R.layout.on_mode);
         Context context = getApplicationContext();
-        myswitch=(Switch)findViewById(R.id.switch2);
+        myswitch = (Switch) findViewById(R.id.switch2);
         myswitch.setChecked(false);
 
-        oSensorManager=(SensorManager)getSystemService(Context.SENSOR_SERVICE);
+
+        oSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         oSpeed = oSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
         oProximity = oSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         oLight = oSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
 
-        Subscriber.main("Accelerometer",MainActivity.DeviceID);
-        Subscriber.main("Proximity",MainActivity.DeviceID);
-        Subscriber.main("Light",MainActivity.DeviceID);
+        final LocationManager LM = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);//gps manager
 
 
-
-
-        LocationManager LM = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);//gps manager
-        WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);//wifi manager
-        if(!wifi.isWifiEnabled()){//is it isn't enabled, turn it on and show toast
+        WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);//wifi manager
+        if (!wifi.isWifiEnabled()) {//is it isn't enabled, turn it on and show toast
             wifi.setWifiEnabled(true);
             Toast.makeText(context, "Wi-Fi enabled", Toast.LENGTH_SHORT).show();
-        }
-        else Toast.makeText(context, "Wi-Fi is already enabled", Toast.LENGTH_SHORT).show();//else inform the user
+        } else
+            Toast.makeText(context, "Wi-Fi is already enabled", Toast.LENGTH_SHORT).show();//else inform the user
 
-        if(LM.isProviderEnabled(LocationManager.GPS_PROVIDER)){//inform the user that gps was turned on
+        if (LM.isProviderEnabled(LocationManager.GPS_PROVIDER)) {//inform the user that gps was turned on
             Toast.makeText(context, "GPS is already enabled", Toast.LENGTH_SHORT).show();
         }
 
 
 //following piece of code is taken from google settings api
-        if (googleApiClient == null){
+        if (googleApiClient == null) {
             googleApiClient = new GoogleApiClient.Builder(context)
                     .addApi(LocationServices.API)
                     .addConnectionCallbacks(this)
@@ -104,6 +103,21 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                         case LocationSettingsStatusCodes.SUCCESS:
                             // All location settings are satisfied. The client can initialize location
                             // requests here.
+                            LocListener locationListener = new LocListener();
+                            if (ActivityCompat.checkSelfPermission(OnMode.this, android.Manifest.permission.ACCESS_FINE_LOCATION)
+                                    != PackageManager.PERMISSION_GRANTED
+                                    && ActivityCompat.checkSelfPermission(OnMode.this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
+                                    != PackageManager.PERMISSION_GRANTED) {
+                                // TODO: Consider calling
+                                //    ActivityCompat#requestPermissions
+                                // here to request the missing permissions, and then overriding
+                                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                                //                                          int[] grantResults)
+                                // to handle the case where the user grants the permission. See the documentation
+                                // for ActivityCompat#requestPermissions for more details.
+                                return;
+                            }
+                            LM.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
                             break;
                         case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
                             // Location settings are not satisfied. But could be fixed by showing the user
@@ -128,6 +142,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
         }
 
+
         myswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
@@ -136,6 +151,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                     oSensorManager.registerListener(OnMode.this, oSpeed, SensorManager.SENSOR_DELAY_NORMAL);
                     oSensorManager.registerListener(OnMode.this, oLight, SensorManager.SENSOR_DELAY_NORMAL);
                     oSensorManager.registerListener(OnMode.this, oProximity, SensorManager.SENSOR_DELAY_NORMAL);
+                    //Subscriber.main("Accelerometer", MainActivity.DeviceID);
+                   // Subscriber.main("Proximity", MainActivity.DeviceID);
+                   // Subscriber.main("Light", MainActivity.DeviceID);
                 }else{
                     oSensorManager.unregisterListener(OnMode.this);
                 }

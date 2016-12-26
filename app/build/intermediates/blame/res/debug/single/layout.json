@@ -8,20 +8,20 @@
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/activity_delay.xml",
         "source": "/home/stelios/Documents/ASProject/newapp/app/src/main/res/layout/activity_delay.xml"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
@@ -32,20 +32,20 @@
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_big_media.xml"
-    },
-    {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/cast_expanded_controller_activity.xml",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/layout/cast_expanded_controller_activity.xml"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/layout/mqtt_settings.xml",
