@@ -118,6 +118,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                                 return;
                             }
                             LM.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+                            
                             break;
                         case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
                             // Location settings are not satisfied. But could be fixed by showing the user
