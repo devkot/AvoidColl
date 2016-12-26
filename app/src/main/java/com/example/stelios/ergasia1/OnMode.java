@@ -33,7 +33,6 @@ import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 
-import java.util.UUID;
 
 //google settings api documentation
 public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener, SensorEventListener {
@@ -41,7 +40,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     private SensorManager oSensorManager; //set sensor manager
     private Sensor oSpeed, oProximity, oLight; //declare sensors
     private Switch myswitch;
-    String DeviceID=UUID.randomUUID().toString();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +56,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         oLight = oSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
 
-
+        Subscriber.main("Accelerometer",MainActivity.DeviceID);
+        Subscriber.main("Proximity",MainActivity.DeviceID);
+        Subscriber.main("Light",MainActivity.DeviceID);
 
 
 
@@ -221,15 +222,15 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     @Override
     public void onSensorChanged(SensorEvent event) {
             if (event.sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION) {
-                Publisher.main(String.valueOf(event.values[0]),"Accelerometer",DeviceID);
-                Publisher.main(String.valueOf(event.values[1]),"Accelerometer",DeviceID);
-                Publisher.main(String.valueOf(event.values[2]),"Accelerometer",DeviceID);
+                Publisher.main(String.valueOf(event.values[0]),"Accelerometer",MainActivity.DeviceID);
+                Publisher.main(String.valueOf(event.values[1]),"Accelerometer",MainActivity.DeviceID);
+                Publisher.main(String.valueOf(event.values[2]),"Accelerometer",MainActivity.DeviceID);
             }
             if (event.sensor.getType() == Sensor.TYPE_PROXIMITY) {
-                Publisher.main(String.valueOf(event.values[0]),"Proximity",DeviceID);
+                Publisher.main(String.valueOf(event.values[0]),"Proximity",MainActivity.DeviceID);
             }
             if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
-                Publisher.main(String.valueOf(event.values[0]),"Light",DeviceID);
+                Publisher.main(String.valueOf(event.values[0]),"Light",MainActivity.DeviceID);
             }
 
     }

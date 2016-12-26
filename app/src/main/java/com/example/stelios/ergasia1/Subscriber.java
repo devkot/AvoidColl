@@ -1,7 +1,5 @@
 package com.example.stelios.ergasia1;
 
-import android.support.v7.app.AppCompatActivity;
-
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
@@ -14,11 +12,11 @@ import java.sql.Timestamp;
 
 //code from eclass
 public class Subscriber implements MqttCallback{
-    public static void main(String[] args) {
-        String topic = "MQTT Example";
+    public static void main(String top, String id) {
+        String topic = top;
         int qos = 2;
-        String broker = "tcp://192.168.1.10:1883";
-        String clientId = "JavaSampleSubscriber";
+        String broker = MQTTSettings.str;
+        String clientId = id;
         MemoryPersistence persistence = new MemoryPersistence();
         try {
 //Connect client to MQTT Broker
