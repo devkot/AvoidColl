@@ -7,14 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 
 
 public class LocListener extends AppCompatActivity implements android.location.LocationListener{
-
+    static double lat;
+    static double lon;
     @Override
     public void onLocationChanged(Location location) {
         location.getLatitude();
         location.getLongitude();
 
-        double lat = location.getLatitude();
-        double lon = location.getLongitude();
+        lat = location.getLatitude();
+        lon = location.getLongitude();
 
     }
 

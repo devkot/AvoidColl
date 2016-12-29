@@ -1,5 +1,8 @@
 package com.example.stelios.ergasia1;
 
+import android.content.Context;
+import android.widget.Toast;
+
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
@@ -12,6 +15,7 @@ import java.sql.Timestamp;
 
 //code from eclass
 public class Subscriber implements MqttCallback{
+    Context context;
     public static void main(String top, String id) {
         String topic = top;
         int qos = 2;
@@ -30,7 +34,7 @@ public class Subscriber implements MqttCallback{
             sampleClient.connect(connOpts);
             System.out.println("Connected");
 //Subscribe to a topic
-            System.out.println("Subscribing to topic\" "+topic+"\" qos "+ qos);
+            System.out.println("Subscribing to topic\""+topic+"\" qos "+ qos);
             sampleClient.subscribe(topic, qos);
         } catch(MqttException me) {
             System.out.println("reason " + me.getReasonCode());
@@ -45,7 +49,7 @@ public class Subscriber implements MqttCallback{
     public void connectionLost(Throwable cause) {
 // This method is called when the connection to the server is lost.
         System.out.println("Connection lost!" + cause);
-        System.exit(1);
+       // System.exit(1);
     }
     /***@seeMqttCallback#deliveryComplete(IMqttDeliveryToken)*/
     public void deliveryComplete(IMqttDeliveryToken token) {
@@ -61,6 +65,7 @@ public class Subscriber implements MqttCallback{
                 "  Topic:\t" + topic +
                 "  Message:\t" + new String(message.getPayload()) +
                 "QoS:\t" + message.getQos());
+        Toast.makeText(context, topic + "Danger", Toast.LENGTH_SHORT).show();
     }
 }
 

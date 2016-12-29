@@ -43,6 +43,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     private SensorManager oSensorManager; //set sensor manager
     private Sensor oSpeed, oProximity, oLight; //declare sensors
     private Switch myswitch;
+    double latitude, longitude;
 
 
     @Override
@@ -118,7 +119,10 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                                 return;
                             }
                             LM.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
-                            
+                            latitude=LocListener.lat;
+                            longitude=LocListener.lon;
+                            Publisher.main(String.valueOf(latitude),"Latitude",MainActivity.DeviceID);
+                            Publisher.main(String.valueOf(longitude),"Longitude",MainActivity.DeviceID);
                             break;
                         case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
                             // Location settings are not satisfied. But could be fixed by showing the user
@@ -153,8 +157,8 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                     oSensorManager.registerListener(OnMode.this, oLight, SensorManager.SENSOR_DELAY_NORMAL);
                     oSensorManager.registerListener(OnMode.this, oProximity, SensorManager.SENSOR_DELAY_NORMAL);
                     //Subscriber.main("Accelerometer", MainActivity.DeviceID);
-                   // Subscriber.main("Proximity", MainActivity.DeviceID);
-                   // Subscriber.main("Light", MainActivity.DeviceID);
+                    //Subscriber.main("Proximity", MainActivity.DeviceID);
+                    //Subscriber.main("Light", MainActivity.DeviceID);
                 }else{
                     oSensorManager.unregisterListener(OnMode.this);
                 }
@@ -177,6 +181,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
        // oSensorManager.registerListener(this, oSpeed, SensorManager.SENSOR_DELAY_NORMAL);
        // oSensorManager.registerListener(this, oLight, SensorManager.SENSOR_DELAY_NORMAL);
      //   oSensorManager.registerListener(this, oProximity, SensorManager.SENSOR_DELAY_NORMAL);
+        Subscriber.main("Accelerometer", MainActivity.DeviceID);
+        Subscriber.main("Proximity", MainActivity.DeviceID);
+        Subscriber.main("Light", MainActivity.DeviceID);
     }
 
     @Override
@@ -232,7 +239,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
     @Override
     public void onNetworkConnectionChanged(boolean isConnected) { //on connection change we terminate the activity
-        if(isConnected==false){
+        if(!isConnected){
             Toast.makeText(getApplicationContext(), "No internet connectivity, Online Mode terminating", Toast.LENGTH_SHORT).show();
             finish();
         }
