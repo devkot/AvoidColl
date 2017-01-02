@@ -22,6 +22,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import java.util.UUID;
+
 public class MainActivity extends AppCompatActivity implements SensorEventListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private SensorManager mSensorManager; //set sensor manager
     private Sensor mSpeed, mProximity, mLight; //declare sensors
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     NotificationCompat.Builder notification; //declare notification builder
     private static final int id = 1; //initialize notification id
     static float Ax=0, Ay=0, Az=0;
+    static String DeviceID= UUID.randomUUID().toString();
 
     @Override
     public final void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         acceleration = (TextView)findViewById(R.id.acceleration);
         distance = (TextView)findViewById(R.id.distance);
         light = (TextView)findViewById(R.id.light);
+
 
         if(mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION) == null) //check if the device has sensor
             acceleration.setText("Your device doesn't have an accelerometer");

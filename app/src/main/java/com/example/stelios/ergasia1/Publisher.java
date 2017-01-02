@@ -8,12 +8,12 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 //code from eclass
 public class Publisher {
-    public static void main(String[] args) {
-        String topic = "MQTT Example";
-        String content = args[0];
+    public static void main(String data, String top, String id) {
+        String topic = top;
+        String content = data;
         int qos = 2;
-        String broker = "tcp://192.168.1.9:1883";
-        String clientId = "JavaSamplePublisher";
+        String broker = MQTTSettings.str;
+        String clientId = id;
         MemoryPersistence persistence = new MemoryPersistence();
         try {
 //Connect to MQTT Broker
@@ -44,5 +44,5 @@ public class Publisher {
 
 
 }
-//edw sensores k unregister ap allou
-//block ta alla activities kapws
+//timestamp
+
