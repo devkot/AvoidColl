@@ -13,7 +13,7 @@ public class MQTTSettings extends AppCompatActivity{
     TextView textViewmqtt;
     EditText edittext;
     Button btn;
-    static String str="tcp://192.168.1.10:1883";
+    static String str="tcp://192.168.1.9:1883";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,6 @@ public class MQTTSettings extends AppCompatActivity{
         textViewmqtt.setText("MQTT Broker IP");
         edittext=(EditText)findViewById(R.id.editText);
         btn=(Button)findViewById(R.id.button2);
-
-
 
 
         btn.setOnClickListener(new View.OnClickListener() {

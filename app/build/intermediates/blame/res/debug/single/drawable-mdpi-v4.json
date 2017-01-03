@@ -276,12 +276,12 @@
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-mdpi-v4/cast_abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_stop_white_24.png",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-mdpi-v4/quantum_ic_stop_white_24.png"
-    },
-    {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_volume_up_white_36.png",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-mdpi-v4/quantum_ic_volume_up_white_36.png"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_stop_white_24.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-mdpi-v4/quantum_ic_stop_white_24.png"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",

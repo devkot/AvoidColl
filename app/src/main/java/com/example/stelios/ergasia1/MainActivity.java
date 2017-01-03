@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onPause() {
         super.onPause();
-        //mSensorManager.unregisterListener(this); //Uncomment if we want to release the sensors for less power consumption
+        mSensorManager.unregisterListener(this); //Uncomment if we want to release the sensors for less power consumption
     }
 
     @Override
