@@ -328,12 +328,12 @@
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/quantum_ic_cast_connected_white_24.png",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xhdpi-v4/quantum_ic_cast_connected_white_24.png"
-    },
-    {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/quantum_ic_cast_connected_white_24.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xhdpi-v4/quantum_ic_cast_connected_white_24.png"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_18_light.png",
@@ -760,12 +760,12 @@
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
-        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/quantum_ic_skip_previous_white_36.png",
         "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-xhdpi-v4/quantum_ic_skip_previous_white_36.png"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_connecting_12_light.png",

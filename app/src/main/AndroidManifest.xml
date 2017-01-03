@@ -10,13 +10,12 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <uses-feature android:name="android.hardware.location.gps" />
 
-
-
     <application
-        android:allowBackup="true"
         android:name=".Init"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="AvoidColl"
         android:launchMode="singleInstance"
@@ -50,11 +49,12 @@
             android:name=".OnMode"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
+
+        <service android:name=".AccelerationService" />
         <activity
             android:name=".MQTTSettings"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
-
 
         <receiver
             android:name=".ConnectivityReceiver"
@@ -64,6 +64,15 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+
+        <service
+            android:name=".ProximityService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".LightService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

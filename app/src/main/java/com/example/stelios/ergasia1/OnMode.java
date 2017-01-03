@@ -38,7 +38,7 @@ import com.google.android.gms.location.LocationSettingsStatusCodes;
 
 
 //google settings api documentation
-public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener, SensorEventListener {
+public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private GoogleApiClient googleApiClient; //google api for gps
     private SensorManager oSensorManager; //set sensor manager
     private Sensor oSpeed, oProximity, oLight; //declare sensors
@@ -53,14 +53,14 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         Context context = getApplicationContext();
         myswitch = (Switch) findViewById(R.id.switch2);
         myswitch.setChecked(false);
-
+/*
 
         oSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         oSpeed = oSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
         oProximity = oSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         oLight = oSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
-
+*/
         final LocationManager LM = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);//gps manager
 
 
@@ -153,14 +153,14 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
                 if(isChecked){
-                    oSensorManager.registerListener(OnMode.this, oSpeed, SensorManager.SENSOR_DELAY_NORMAL);
-                    oSensorManager.registerListener(OnMode.this, oLight, SensorManager.SENSOR_DELAY_NORMAL);
-                    oSensorManager.registerListener(OnMode.this, oProximity, SensorManager.SENSOR_DELAY_NORMAL);
-                    //Subscriber.main("Accelerometer", MainActivity.DeviceID);
-                    //Subscriber.main("Proximity", MainActivity.DeviceID);
-                    //Subscriber.main("Light", MainActivity.DeviceID);
+                    Intent intent = new Intent(getApplicationContext(), AccelerationService.class );
+                    startService(intent);
+                    Intent intent1 = new Intent(getApplicationContext(), ProximityService.class );
+                    startService(intent1);
+                    Intent intent2 = new Intent(getApplicationContext(), LightService.class );
+                    startService(intent2);
                 }else{
-                    oSensorManager.unregisterListener(OnMode.this);
+
                 }
 
             }
@@ -178,12 +178,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     protected void onResume() {
         super.onResume();
         Init.getInstance().setConnectivityListener(this);
-       // oSensorManager.registerListener(this, oSpeed, SensorManager.SENSOR_DELAY_NORMAL);
-       // oSensorManager.registerListener(this, oLight, SensorManager.SENSOR_DELAY_NORMAL);
-     //   oSensorManager.registerListener(this, oProximity, SensorManager.SENSOR_DELAY_NORMAL);
-        Subscriber.main("Accelerometer", MainActivity.DeviceID);
-        Subscriber.main("Proximity", MainActivity.DeviceID);
-        Subscriber.main("Light", MainActivity.DeviceID);
+     //   Subscriber.main("Accelerometer", MainActivity.DeviceID);
+      //  Subscriber.main("Proximity", MainActivity.DeviceID);
+       // Subscriber.main("Light", MainActivity.DeviceID);
     }
 
     @Override
@@ -245,24 +242,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         }
     }
 
-    @Override
-    public void onSensorChanged(SensorEvent event) {
-            if (event.sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION) {
-                Publisher.main(String.valueOf(event.values[0]),"Accelerometer",MainActivity.DeviceID);
-                Publisher.main(String.valueOf(event.values[1]),"Accelerometer",MainActivity.DeviceID);
-                Publisher.main(String.valueOf(event.values[2]),"Accelerometer",MainActivity.DeviceID);
-            }
-            if (event.sensor.getType() == Sensor.TYPE_PROXIMITY) {
-                Publisher.main(String.valueOf(event.values[0]),"Proximity",MainActivity.DeviceID);
-            }
-            if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
-                Publisher.main(String.valueOf(event.values[0]),"Light",MainActivity.DeviceID);
-            }
 
-    }
 
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
-    }
 }
