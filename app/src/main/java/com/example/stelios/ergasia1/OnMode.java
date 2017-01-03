@@ -153,9 +153,12 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
                 if(isChecked){
-
                     Intent intent = new Intent(getApplicationContext(), AccelerationService.class );
                     startService(intent);
+                    Intent intent1 = new Intent(getApplicationContext(), ProximityService.class );
+                    startService(intent1);
+                    Intent intent2 = new Intent(getApplicationContext(), LightService.class );
+                    startService(intent2);
                 }else{
 
                 }
