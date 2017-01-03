@@ -9,11 +9,8 @@ import android.hardware.SensorManager;
 import android.os.AsyncTask;
 import android.os.IBinder;
 
-/**
- * Created by stelios on 3/1/2017.
- */
+
 public class AccelerationService extends Service implements SensorEventListener {
-    private static final String DEBUG_TAG = "BaroLoggerService";
     static float valuex,valuey, valuez;
 
     private SensorManager sensorManager = null;
