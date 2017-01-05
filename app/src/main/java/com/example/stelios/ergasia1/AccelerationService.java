@@ -40,6 +40,7 @@ public class AccelerationService extends Service implements SensorEventListener 
         // grab the values and timestamp -- off the main thread
         long timestamp = event.timestamp;
         valuex = event.values[0]; valuey=event.values[1]; valuez=event.values[2];//save values
+
         new SensorEventLoggerTask().execute(event);//pass to async task to publish
         // stop the service
         stopSelf();
@@ -53,6 +54,7 @@ public class AccelerationService extends Service implements SensorEventListener 
             Publisher.main(String.valueOf((valuex)),"Acceleration",MainActivity.DeviceID);
             Publisher.main(String.valueOf((valuey)),"Acceleration",MainActivity.DeviceID);
             Publisher.main(String.valueOf((valuez)),"Acceleration",MainActivity.DeviceID);
+            Publisher.main(String.valueOf(OnMode.latLng),"Acceleration",MainActivity.DeviceID);
             return null;
         }
     }
