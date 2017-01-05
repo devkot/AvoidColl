@@ -35,9 +35,9 @@ public class Subscriber implements MqttCallback{
             System.out.println("Connected");
 //Subscribe to a topic
             System.out.println("Subscribing to topic\""+topic+"\" qos "+ qos);
-            sampleClient.subscribe("Acceleration", qos);
-            sampleClient.subscribe("Proximity",qos);
-            sampleClient.subscribe("Light",qos);
+            sampleClient.subscribe(id+"/"+"Acceleration", qos);
+            sampleClient.subscribe(id+"/"+"Proximity",qos);
+            sampleClient.subscribe(id+"/"+"Light",qos);
         } catch(MqttException me) {
             System.out.println("reason " + me.getReasonCode());
             System.out.println(" msg " + me.getMessage());
