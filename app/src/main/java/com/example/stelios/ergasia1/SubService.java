@@ -7,7 +7,7 @@ import android.os.IBinder;
 public class SubService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Subscriber.main("Acceleration/+/Proximity/+/Light","SubID");
+        Subscriber.main("Acceleration/Proximity/Light","AndroidDevice");
         //Subscriber.main("Proximity",MainActivity.DeviceID);
         //Subscriber.main("Light",MainActivity.DeviceID);
         return START_STICKY;

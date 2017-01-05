@@ -1,4 +1,4 @@
-package com.example.stelios.ergasia1;
+/*package com.example.stelios.ergasia1;
 
 import android.location.Location;
 import android.os.Bundle;
@@ -14,8 +14,6 @@ public class LocListener extends AppCompatActivity implements android.location.L
         location.getLatitude();
         location.getLongitude();
 
-        lat = location.getLatitude();
-        lon = location.getLongitude();
 
     }
 
@@ -34,3 +32,4 @@ public class LocListener extends AppCompatActivity implements android.location.L
 
     }
 }
+*/

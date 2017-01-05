@@ -6,15 +6,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
+import android.location.Location;
 import android.location.LocationManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -35,15 +30,18 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.location.LocationListener;
 
 
 //google settings api documentation
 public class OnMode extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, ConnectivityReceiver.ConnectivityReceiverListener {
     private GoogleApiClient googleApiClient; //google api for gps
-    private SensorManager oSensorManager; //set sensor manager
-    private Sensor oSpeed, oProximity, oLight; //declare sensors
     private Switch myswitch;
-    double latitude, longitude;
+    static double latitude;
+    static Location mLastLocation;
+    double longitude;
+    static LatLng latLng;
 
 
     @Override
@@ -53,16 +51,8 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         Context context = getApplicationContext();
         myswitch = (Switch) findViewById(R.id.switch2);
         myswitch.setChecked(false);
-/*
 
-        oSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        oSpeed = oSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
-        oProximity = oSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
-        oLight = oSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-
-*/
         final LocationManager LM = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);//gps manager
-
 
         WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);//wifi manager
         if (!wifi.isWifiEnabled()) {//is it isn't enabled, turn it on and show toast
@@ -93,6 +83,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
             builder.setAlwaysShow(true); //it was boolean show in google doc
 
+
             PendingResult<LocationSettingsResult> result =
                     LocationServices.SettingsApi.checkLocationSettings(googleApiClient, builder.build());
             result.setResultCallback(new ResultCallback<LocationSettingsResult>() {
@@ -104,25 +95,6 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                         case LocationSettingsStatusCodes.SUCCESS:
                             // All location settings are satisfied. The client can initialize location
                             // requests here.
-                            LocListener locationListener = new LocListener();
-                            if (ActivityCompat.checkSelfPermission(OnMode.this, android.Manifest.permission.ACCESS_FINE_LOCATION)
-                                    != PackageManager.PERMISSION_GRANTED
-                                    && ActivityCompat.checkSelfPermission(OnMode.this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
-                                    != PackageManager.PERMISSION_GRANTED) {
-                                // TODO: Consider calling
-                                //    ActivityCompat#requestPermissions
-                                // here to request the missing permissions, and then overriding
-                                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                                //                                          int[] grantResults)
-                                // to handle the case where the user grants the permission. See the documentation
-                                // for ActivityCompat#requestPermissions for more details.
-                                return;
-                            }
-                            LM.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
-                            latitude=LocListener.lat;
-                            longitude=LocListener.lon;
-                            Publisher.main(String.valueOf(latitude),"Latitude",MainActivity.DeviceID);
-                            Publisher.main(String.valueOf(longitude),"Longitude",MainActivity.DeviceID);
                             break;
                         case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
                             // Location settings are not satisfied. But could be fixed by showing the user
@@ -152,17 +124,17 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
-                if(isChecked){
-                    Intent intent3 = new Intent(getApplicationContext(),SubService.class);
+                if (isChecked) {
+                    Intent intent3 = new Intent(getApplicationContext(), SubService.class);
                     startService(intent3);
-                    Intent intent1 = new Intent(getApplicationContext(), ProximityService.class );
+                    Intent intent1 = new Intent(getApplicationContext(), ProximityService.class);
                     startService(intent1);
-                    Intent intent2 = new Intent(getApplicationContext(), LightService.class );
+                    Intent intent2 = new Intent(getApplicationContext(), LightService.class);
                     startService(intent2);
-                    Intent intent = new Intent(getApplicationContext(), AccelerationService.class );
+                    Intent intent = new Intent(getApplicationContext(), AccelerationService.class);
                     startService(intent);
 
-                }else{
+                } else {
 
                 }
 
@@ -180,10 +152,13 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     @Override
     protected void onResume() {
         super.onResume();
-        Init.getInstance().setConnectivityListener(this);
-     //   Subscriber.main("Accelerometer", MainActivity.DeviceID);
-      //  Subscriber.main("Proximity", MainActivity.DeviceID);
-       // Subscriber.main("Light", MainActivity.DeviceID);
+        Init.getInstance().setConnectivityListener(this);//listener for broadcast receiver
+    }
+
+    @Override
+    protected void onStop() {
+        googleApiClient.disconnect();//disc client
+        super.onStop();
     }
 
     @Override
@@ -195,13 +170,13 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()){ //switch classes
+        switch (item.getItemId()) { //switch classes
             case R.id.mqtt_settings://go to mqtt settings
                 Intent intent = new Intent(this, MQTTSettings.class);
                 this.startActivity(intent);
                 break;
             case R.id.offline: //button to go offline
-                WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
+                WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
                 wifi.setWifiEnabled(false);//broadcaster will terminate activity
                 break;
             case R.id.exit2:
@@ -219,7 +194,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) { //exit on click
-                        WifiManager wifi =(WifiManager)getSystemService(Context.WIFI_SERVICE);
+                        WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
                         wifi.setWifiEnabled(false);//broadcaster will terminate activity
                         finish();
                         System.exit(0);
@@ -228,13 +203,33 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     }
 
     @Override
-    public void onConnected(@Nullable Bundle bundle) {
+    public void onConnected(Bundle connectionHint) {
+
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
+        if (mLastLocation != null) {
+            latitude=(mLastLocation.getLatitude());
+            longitude=(mLastLocation.getLongitude());
+            latLng = new LatLng(latitude, longitude);
+        }
+
     }
+
+
     @Override
     public void onConnectionSuspended(int i) {
     }
     @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+    public void onConnectionFailed(ConnectionResult connectionResult) {
     }
 
     @Override
