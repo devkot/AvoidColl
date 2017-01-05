@@ -51,6 +51,7 @@
             android:screenOrientation="portrait" />
 
         <service android:name=".AccelerationService" />
+
         <activity
             android:name=".MQTTSettings"
             android:configChanges="orientation|keyboardHidden"
@@ -68,9 +69,13 @@
         <service
             android:name=".ProximityService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
         <service
             android:name=".LightService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SubService"
             android:enabled="true"
             android:exported="true"></service>
     </application>

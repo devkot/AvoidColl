@@ -93,6 +93,10 @@
             android:name="com.example.stelios.ergasia1.LightService"
             android:enabled="true"
             android:exported="true" />
+        <service
+            android:name="com.example.stelios.ergasia1.SubService"
+            android:enabled="true"
+            android:exported="true" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
