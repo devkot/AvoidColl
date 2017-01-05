@@ -9,11 +9,11 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 //code from eclass
 public class Publisher {
     public static void main(String data, String top, String id) {
-        String topic = top;
         String content = data;
         int qos = 2;
         String broker = MQTTSettings.str;
         String clientId = id;
+        String topic = clientId+"/"+top;
         MemoryPersistence persistence = new MemoryPersistence();
         try {
 //Connect to MQTT Broker

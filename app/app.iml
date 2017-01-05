@@ -249,5 +249,6 @@
     <orderEntry type="library" exported="" scope="TEST" name="junit-4.12" level="project" />
     <orderEntry type="library" exported="" name="org.eclipse.paho.android.service-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="mediarouter-v7-24.0.0" level="project" />
+    <orderEntry type="library" exported="" name="android-android-23" level="project" />
   </component>
 </module>
