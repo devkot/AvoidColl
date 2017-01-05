@@ -1,18 +1,26 @@
 [
     {
-        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\menu\\option_menu.xml",
-        "source": "H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\menu\\option_menu.xml"
+        "merged": "/home/stelios/Documents/ASProject/newapp/H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\menu\\option_menu.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\menu\\option_menu.xml"
     },
     {
-        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\menu\\online_menu.xml",
-        "source": "H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\menu\\online_menu.xml"
+        "merged": "/home/stelios/Documents/ASProject/newapp/H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\menu\\online_menu.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\menu\\online_menu.xml"
     },
     {
-        "merged": "H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\online_menu.xml",
-        "source": "H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\src\\main\\res\\menu\\online_menu.xml"
+        "merged": "/home/stelios/Documents/ASProject/newapp/H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\online_menu.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\src\\main\\res\\menu\\online_menu.xml"
     },
     {
-        "merged": "H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\option_menu.xml",
-        "source": "H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\src\\main\\res\\menu\\option_menu.xml"
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/menu/online_menu.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/src/main/res/menu/online_menu.xml"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/menu/option_menu.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/src/main/res/menu/option_menu.xml"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\option_menu.xml",
+        "source": "/home/stelios/Documents/ASProject/newapp/H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\src\\main\\res\\menu\\option_menu.xml"
     }
 ]

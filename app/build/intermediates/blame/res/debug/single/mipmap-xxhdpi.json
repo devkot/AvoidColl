@@ -1,10 +1,14 @@
 [
     {
-        "merged": "H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/home/stelios/Documents/ASProject/newapp/H:\\AS_Projects\\avoidcoll\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/H:\\AS_Projects\\avoidcoll\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/home/stelios/Documents/ASProject/newapp/H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/H:\\home\\stelios\\Documents\\ASProject\\newapp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/home/stelios/Documents/ASProject/newapp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/stelios/Documents/ASProject/newapp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
 ]
