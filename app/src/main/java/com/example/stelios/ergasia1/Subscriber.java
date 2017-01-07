@@ -68,6 +68,30 @@ public class Subscriber implements MqttCallback{
                 "  Topic:\t" + topic +
                 "  Message:\t" + new String(message.getPayload()) +
                 "QoS:\t" + message.getQos());
+        switch(topic) {
+            case "Acceleration":
+                //Toast.makeText(context, topic + "Danger", Toast.LENGTH_SHORT).show();
+                break;
+            case "Proximity/Danger":
+
+                break;
+
+            case "Light/Danger":
+
+                break;
+
+            case "Acceleration/Confirmed":
+
+                break;
+            case "Proximity/Confirmed":
+
+                break;
+            case "Light/Confirmed":
+
+                break;
+
+
+        }
         //Toast.makeText(context, topic + "Danger", Toast.LENGTH_SHORT).show();
     }
 }
