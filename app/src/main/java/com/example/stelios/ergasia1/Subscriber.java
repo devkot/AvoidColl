@@ -1,6 +1,10 @@
 package com.example.stelios.ergasia1;
 
 import android.content.Context;
+import android.location.LocationListener;
+import android.os.Handler;
+import android.os.Looper;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
@@ -15,7 +19,6 @@ import java.sql.Timestamp;
 
 //code from eclass
 public class Subscriber implements MqttCallback{
-    Context context;
     public static void main(String top, String id) {
         String topic = top;
         int qos = 2;
@@ -35,10 +38,10 @@ public class Subscriber implements MqttCallback{
             System.out.println("Connected");
 //Subscribe to a topic
             System.out.println("Subscribing to topic\""+topic+"\" qos "+ qos);
-            sampleClient.subscribe("Acceleration", qos);
-            sampleClient.subscribe("Proximity",qos);
-            sampleClient.subscribe("Light",qos);
-            sampleClient.subscribe("Android",qos);
+            sampleClient.subscribe("Acceleration/Danger", qos);
+            sampleClient.subscribe("Proximity/Danger",qos);
+            sampleClient.subscribe("Light/Danger",qos);
+           // sampleClient.subscribe("Android",qos);
         } catch(MqttException me) {
             System.out.println("reason " + me.getReasonCode());
             System.out.println(" msg " + me.getMessage());
@@ -60,7 +63,7 @@ public class Subscriber implements MqttCallback{
     }
     /***@seeMqttCallback#messageArrived(String,MqttMessage)*/
     public void
-    messageArrived(String topic, MqttMessage message) throws MqttException
+    messageArrived(String topic, final MqttMessage message) throws MqttException
     {
 //This method is called when a message arrives from the server.
         String time = new Timestamp(System.currentTimeMillis()).toString();
@@ -68,31 +71,31 @@ public class Subscriber implements MqttCallback{
                 "  Topic:\t" + topic +
                 "  Message:\t" + new String(message.getPayload()) +
                 "QoS:\t" + message.getQos());
+        Looper.prepare();
+        OnMode.returnHandler().sendEmptyMessage(0);
         switch(topic) {
-            case "Acceleration":
-                //Toast.makeText(context, topic + "Danger", Toast.LENGTH_SHORT).show();
+            case "Acceleration/Danger":
+                OnMode.returnHandler().sendEmptyMessage(0);
                 break;
             case "Proximity/Danger":
-
+                OnMode.returnHandler().sendEmptyMessage(0);
                 break;
-
             case "Light/Danger":
-
+                OnMode.returnHandler().sendEmptyMessage(0);
                 break;
-
             case "Acceleration/Confirmed":
-
+                OnMode.returnHandler().sendEmptyMessage(0);
                 break;
             case "Proximity/Confirmed":
-
+                OnMode.returnHandler().sendEmptyMessage(0);
                 break;
             case "Light/Confirmed":
-
+                OnMode.returnHandler().sendEmptyMessage(0);
                 break;
 
 
         }
-        //Toast.makeText(context, topic + "Danger", Toast.LENGTH_SHORT).show();
+
     }
 }
 

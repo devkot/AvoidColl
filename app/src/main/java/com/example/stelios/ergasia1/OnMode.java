@@ -10,6 +10,8 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -42,6 +44,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     static Location mLastLocation;
     double longitude;
     static LatLng latLng;
+    private static Handler hm;
 
 
     @Override
@@ -51,6 +54,12 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         Context context = getApplicationContext();
         myswitch = (Switch) findViewById(R.id.switch2);
         myswitch.setChecked(false);
+
+        hm = new Handler() {
+            public void handleMessage(Message m) {
+                Toast.makeText(OnMode.this,"Collision Danger",Toast.LENGTH_LONG).show();
+            }
+        };
 
         final LocationManager LM = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);//gps manager
 
@@ -143,6 +152,9 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
 
     }//oncreate end
+    public static Handler returnHandler(){
+        return hm;
+    }
 
     @Override
     protected void onStart() {
