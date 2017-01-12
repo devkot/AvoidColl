@@ -75,7 +75,6 @@ public class Subscriber implements MqttCallback{
                 "  Message:\t" + new String(message.getPayload()) +
                 "QoS:\t" + message.getQos());
         Looper.prepare();
-        OnMode.returnHandler().sendEmptyMessage(0);
         switch(topic) {
             case "Acceleration/Danger":
                 OnMode.returnHandler().sendEmptyMessage(0);
