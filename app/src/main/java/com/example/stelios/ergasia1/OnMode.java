@@ -42,7 +42,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     private Switch myswitch;
     static double latitude;
     static Location mLastLocation;
-    double longitude;
+    static double longitude;
     static LatLng latLng;
     private static Handler hm;
 
@@ -153,6 +153,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
 
     }//oncreate end
+
     public static Handler returnHandler(){
         return hm;
     }

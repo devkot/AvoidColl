@@ -51,7 +51,10 @@ public class AccelerationService extends Service implements SensorEventListener 
         protected Void doInBackground(SensorEvent... events) {
             //SensorEvent event = events[0];
             // log the value
-            Publisher.main(String.valueOf((valuex))+"/"+String.valueOf((valuey))+"/"+String.valueOf((valuez)),"Acceleration",MainActivity.DeviceID);
+            Publisher.main(String.valueOf((valuex))+"/"+String.valueOf((valuey))+"/"+ String.valueOf((valuez))+"/"
+                    +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),
+                    "Acceleration",
+                    MainActivity.DeviceID);
           // Publisher.main(String.valueOf((valuey)),"Acceleration",MainActivity.DeviceID);
            //Publisher.main(String.valueOf((valuez)),"Acceleration",MainActivity.DeviceID);
           // Publisher.main(String.valueOf(OnMode.latLng),"Acceleration",MainActivity.DeviceID);

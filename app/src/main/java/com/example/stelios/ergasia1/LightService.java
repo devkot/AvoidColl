@@ -53,7 +53,8 @@ public class LightService extends Service implements SensorEventListener{
         protected Void doInBackground(SensorEvent... events) {
             //SensorEvent event = events[0];
             // log the value
-            Publisher.main(String.valueOf((valuel)),"Light",MainActivity.DeviceID);
+            Publisher.main(String.valueOf((valuel))+"/"
+                    +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),"Light",MainActivity.DeviceID);
             return null;
         }
     }

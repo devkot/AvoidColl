@@ -49,7 +49,8 @@ public class ProximityService extends Service implements SensorEventListener{
         protected Void doInBackground(SensorEvent... events) {
             //SensorEvent event = events[0];
             // log the value
-            Publisher.main(String.valueOf((valuep)),"Proximity",MainActivity.DeviceID);
+            Publisher.main(String.valueOf((valuep))+"/"
+                    +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),"Proximity",MainActivity.DeviceID);
             return null;
         }
     }
