@@ -55,7 +55,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         myswitch = (Switch) findViewById(R.id.switch2);
         myswitch.setChecked(false);
 
-        hm = new Handler() {
+        hm = new Handler() {//create handler
             public void handleMessage(Message m) {
                 Toast.makeText(OnMode.this,"Collision Danger",Toast.LENGTH_LONG).show();
             }
@@ -154,7 +154,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
     }//oncreate end
 
-    public static Handler returnHandler(){
+    public static Handler returnHandler(){ //return handler
         return hm;
     }
 
