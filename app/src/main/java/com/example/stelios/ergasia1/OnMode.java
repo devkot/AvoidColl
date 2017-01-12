@@ -11,6 +11,7 @@ import android.location.LocationManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -56,6 +57,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
         myswitch.setChecked(false);
 
         hm = new Handler() {//create handler
+            @Override
             public void handleMessage(Message m) {
                 Toast.makeText(OnMode.this,"Collision Danger",Toast.LENGTH_LONG).show();
             }

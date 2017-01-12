@@ -94,8 +94,6 @@ public class Subscriber implements MqttCallback{
             case "Light/Confirmed":
                 OnMode.returnHandler().sendEmptyMessage(0);
                 break;
-
-
         }
 
     }
