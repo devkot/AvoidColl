@@ -13,7 +13,7 @@ public class Publisher {
         int qos = 2;
         String broker = MQTTSettings.str;
         String clientId = id;
-        String topic = id+"/"+top;
+        String topic = clientId+"/"+top;
         MemoryPersistence persistence = new MemoryPersistence();
         try {
 //Connect to MQTT Broker

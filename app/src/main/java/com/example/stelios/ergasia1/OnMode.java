@@ -145,6 +145,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
 
                 } else {
 
+
                 }
 
             }

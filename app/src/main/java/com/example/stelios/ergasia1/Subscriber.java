@@ -41,6 +41,9 @@ public class Subscriber implements MqttCallback{
             sampleClient.subscribe("Acceleration/Danger", qos);
             sampleClient.subscribe("Proximity/Danger",qos);
             sampleClient.subscribe("Light/Danger",qos);
+            sampleClient.subscribe("Acceleration/Confirmed",qos);
+            sampleClient.subscribe("Proximity/Confirmed",qos);
+            sampleClient.subscribe("Light/Confirmed",qos);
            // sampleClient.subscribe("Android",qos);
         } catch(MqttException me) {
             System.out.println("reason " + me.getReasonCode());
