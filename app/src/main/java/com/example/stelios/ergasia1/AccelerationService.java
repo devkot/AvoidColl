@@ -12,7 +12,7 @@ import android.os.IBinder;
 
 public class AccelerationService extends Service implements SensorEventListener {
     static float valuex,valuey, valuez;
-
+    private AsyncTask AccTask;
     private SensorManager sensorManager = null;
     private Sensor sensor = null;
 
@@ -41,7 +41,7 @@ public class AccelerationService extends Service implements SensorEventListener 
         //long timestamp = event.timestamp;
         valuex = event.values[0]; valuey=event.values[1]; valuez=event.values[2];//save values
 
-        new SensorEventLoggerTask().execute(event);//pass to async task to publish
+        AccTask = new SensorEventLoggerTask().execute(event);//pass to async task to publish
         // stop the service
         stopSelf();
     }
@@ -63,12 +63,9 @@ public class AccelerationService extends Service implements SensorEventListener 
 
 
     }
-
     public boolean stopService(Intent name) {
-        // TODO Auto-generated method stub
-
+        AccTask.cancel(true);
         return super.stopService(name);
     }
-
 
 }

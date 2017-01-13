@@ -15,7 +15,7 @@ import android.os.IBinder;
 
 public class LightService extends Service implements SensorEventListener{
     static float valuel;
-
+    private AsyncTask LightTask;
     private SensorManager sensorManager = null;
     private Sensor sensor = null;
 
@@ -43,7 +43,7 @@ public class LightService extends Service implements SensorEventListener{
         // grab the values and timestamp -- off the main thread
         //long timestamp = event.timestamp;
         valuel = event.values[0];//save values
-        new LightSensorEventLoggerTask().execute(event);//pass to async task to publish
+        LightTask = new LightSensorEventLoggerTask().execute(event);//pass to async task to publish
         // stop the service
         stopSelf();
     }
@@ -57,6 +57,10 @@ public class LightService extends Service implements SensorEventListener{
                     +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),"Light",MainActivity.DeviceID);
             return null;
         }
+    }
+    public boolean stopService(Intent name) {
+        LightTask.cancel(true);
+        return super.stopService(name);
     }
 
 }

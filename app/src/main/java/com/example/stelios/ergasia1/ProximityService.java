@@ -11,7 +11,7 @@ import android.os.IBinder;
 
 public class ProximityService extends Service implements SensorEventListener{
     static float valuep;
-
+    private AsyncTask ProxTask;
     private SensorManager sensorManager = null;
     private Sensor sensor = null;
 
@@ -39,7 +39,7 @@ public class ProximityService extends Service implements SensorEventListener{
         // grab the values and timestamp -- off the main thread
         //long timestamp = event.timestamp;
         valuep = event.values[0];//save values
-        new ProximitySensorEventLoggerTask().execute(event);//pass to async task to publish
+        ProxTask = new ProximitySensorEventLoggerTask().execute(event);//pass to async task to publish
         // stop the service
         stopSelf();
     }
@@ -53,6 +53,11 @@ public class ProximityService extends Service implements SensorEventListener{
                     +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),"Proximity",MainActivity.DeviceID);
             return null;
         }
+    }
+
+    public boolean stopService(Intent name) {
+        ProxTask.cancel(true);
+        return super.stopService(name);
     }
 
 }
