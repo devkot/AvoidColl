@@ -37,7 +37,7 @@ public class ProximityService extends Service implements SensorEventListener{
     @Override
     public void onSensorChanged(SensorEvent event) {
         // grab the values and timestamp -- off the main thread
-        long timestamp = event.timestamp;
+        //long timestamp = event.timestamp;
         valuep = event.values[0];//save values
         new ProximitySensorEventLoggerTask().execute(event);//pass to async task to publish
         // stop the service

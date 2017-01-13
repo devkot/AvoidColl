@@ -146,6 +146,10 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                     startService(intent);
 
                 } else {
+                    stopService(new Intent(getApplicationContext(), AccelerationService.class));
+                    stopService(new Intent(getApplicationContext(), LightService.class));
+                    stopService(new Intent(getApplicationContext(), ProximityService.class));
+                    stopService(new Intent(getApplicationContext(), SubService.class));
 
 
                 }

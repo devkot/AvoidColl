@@ -38,7 +38,7 @@ public class AccelerationService extends Service implements SensorEventListener 
     @Override
     public void onSensorChanged(SensorEvent event) {
         // grab the values and timestamp -- off the main thread
-        long timestamp = event.timestamp;
+        //long timestamp = event.timestamp;
         valuex = event.values[0]; valuey=event.values[1]; valuez=event.values[2];//save values
 
         new SensorEventLoggerTask().execute(event);//pass to async task to publish
@@ -60,6 +60,14 @@ public class AccelerationService extends Service implements SensorEventListener 
           // Publisher.main(String.valueOf(OnMode.latLng),"Acceleration",MainActivity.DeviceID);
             return null;
         }
+
+
+    }
+
+    public boolean stopService(Intent name) {
+        // TODO Auto-generated method stub
+
+        return super.stopService(name);
     }
 
 

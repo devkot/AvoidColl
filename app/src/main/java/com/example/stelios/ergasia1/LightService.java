@@ -41,7 +41,7 @@ public class LightService extends Service implements SensorEventListener{
     @Override
     public void onSensorChanged(SensorEvent event) {
         // grab the values and timestamp -- off the main thread
-        long timestamp = event.timestamp;
+        //long timestamp = event.timestamp;
         valuel = event.values[0];//save values
         new LightSensorEventLoggerTask().execute(event);//pass to async task to publish
         // stop the service
