@@ -11,7 +11,6 @@ import android.location.LocationManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +20,6 @@ import android.view.MenuItem;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
-
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -46,6 +44,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     static double longitude;
     static LatLng latLng;
     private static Handler hm;
+    boolean flag=false;
 
 
     @Override
@@ -144,13 +143,15 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                     startService(intent2);
                     Intent intent = new Intent(getApplicationContext(), AccelerationService.class);
                     startService(intent);
+                    flag=true;
 
                 } else {
-                    stopService(new Intent(getApplicationContext(), AccelerationService.class));
-                    stopService(new Intent(getApplicationContext(), LightService.class));
-                    stopService(new Intent(getApplicationContext(), ProximityService.class));
-                    stopService(new Intent(getApplicationContext(), SubService.class));
-
+                    if(flag) {
+                        stopService(new Intent(getApplicationContext(), AccelerationService.class));
+                        stopService(new Intent(getApplicationContext(), LightService.class));
+                        stopService(new Intent(getApplicationContext(), ProximityService.class));
+                        flag=false;
+                    }
 
                 }
 

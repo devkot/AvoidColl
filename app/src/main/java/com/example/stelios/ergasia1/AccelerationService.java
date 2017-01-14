@@ -55,9 +55,6 @@ public class AccelerationService extends Service implements SensorEventListener 
                     +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),
                     "Acceleration",
                     MainActivity.DeviceID);
-          // Publisher.main(String.valueOf((valuey)),"Acceleration",MainActivity.DeviceID);
-           //Publisher.main(String.valueOf((valuez)),"Acceleration",MainActivity.DeviceID);
-          // Publisher.main(String.valueOf(OnMode.latLng),"Acceleration",MainActivity.DeviceID);
             return null;
         }
 

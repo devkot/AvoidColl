@@ -18,9 +18,5 @@ public class SubService extends Service {
         return null;
     }
 
-    public boolean stopService(Intent name) {
-        stopSelf();
-        return super.stopService(name);
-    }
 
 }
