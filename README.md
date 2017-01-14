@@ -1,3 +1,6 @@
+*******Ολοκληρωμενο README υπαρχει στο repository του JAVA PROJECT οπως ζητηθηκε***************
+
+
 Android App
 
 Offline Mode:
