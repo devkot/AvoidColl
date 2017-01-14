@@ -43,7 +43,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     static Location mLastLocation;
     static double longitude;
     static LatLng latLng;
-    private static Handler hm;
+    private static Handler hm,confirmedhm;
     boolean flag=false;
 
 
@@ -59,6 +59,13 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
             @Override
             public void handleMessage(Message m) {
                 Toast.makeText(OnMode.this,"Collision Danger",Toast.LENGTH_LONG).show();
+            }
+        };
+
+        confirmedhm = new Handler() {//create handler
+            @Override
+            public void handleMessage(Message m) {
+                Toast.makeText(OnMode.this,"Confirmed Collision Danger",Toast.LENGTH_LONG).show();
             }
         };
 
@@ -164,6 +171,11 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
     public static Handler returnHandler(){ //return handler
         return hm;
     }
+
+    public static Handler returnConfirmedHandler(){ //return handler
+        return confirmedhm;
+    }
+
 
     @Override
     protected void onStart() {

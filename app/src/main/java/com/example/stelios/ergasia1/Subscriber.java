@@ -19,11 +19,11 @@ import java.sql.Timestamp;
 
 //code from eclass
 public class Subscriber implements MqttCallback{
+    static String clientId = MainActivity.DeviceID;
     public static void main(String top, String id) {
         String topic = top;
         int qos = 2;
         String broker = MQTTSettings.str;
-        String clientId = id;
         MemoryPersistence persistence = new MemoryPersistence();
         try {
 //Connect client to MQTT Broker
@@ -38,12 +38,12 @@ public class Subscriber implements MqttCallback{
             System.out.println("Connected");
 //Subscribe to a topic
             System.out.println("Subscribing to topic\""+topic+"\" qos "+ qos);
-            sampleClient.subscribe("Acceleration/Danger", qos);
-            sampleClient.subscribe("Proximity/Danger",qos);
-            sampleClient.subscribe("Light/Danger",qos);
-            sampleClient.subscribe("Acceleration/Confirmed",qos);
-            sampleClient.subscribe("Proximity/Confirmed",qos);
-            sampleClient.subscribe("Light/Confirmed",qos);
+            sampleClient.subscribe("Acceleration/Danger"+"/"+clientId, qos);
+            sampleClient.subscribe("Proximity/Danger"+"/"+clientId,qos);
+            sampleClient.subscribe("Light/Danger"+"/"+clientId,qos);
+            sampleClient.subscribe("Acceleration/Confirmed"+"/"+clientId,qos);
+            sampleClient.subscribe("Proximity/Confirmed"+"/"+clientId,qos);
+            sampleClient.subscribe("Light/Confirmed"+"/"+clientId,qos);
            // sampleClient.subscribe("Android",qos);
         } catch(MqttException me) {
             System.out.println("reason " + me.getReasonCode());
@@ -75,27 +75,10 @@ public class Subscriber implements MqttCallback{
                 "  Message:\t" + new String(message.getPayload()) +
                 "QoS:\t" + message.getQos());
         Looper.prepare();
-        switch(topic) {
-            case "Acceleration/Danger":
-                OnMode.returnHandler().sendEmptyMessage(0);
-                break;
-            case "Proximity/Danger":
-                OnMode.returnHandler().sendEmptyMessage(0);
-                break;
-            case "Light/Danger":
-                OnMode.returnHandler().sendEmptyMessage(0);
-                break;
-            case "Acceleration/Confirmed":
-                OnMode.returnHandler().sendEmptyMessage(0);
-                break;
-            case "Proximity/Confirmed":
-                OnMode.returnHandler().sendEmptyMessage(0);
-                break;
-            case "Light/Confirmed":
-                OnMode.returnHandler().sendEmptyMessage(0);
-                break;
-        }
-
+        if(topic=="Acceleration/Danger/"+clientId || topic == "Proximity/Danger"+"/"+clientId || topic == "Light/Danger"+"/"+clientId)
+            OnMode.returnHandler().sendEmptyMessage(0);
+        else if (topic == "Acceleration/Confirmed"+"/"+clientId || topic == "Proximity/Confirmed"+"/"+clientId || topic == "Light/Confirmed"+"/"+clientId)
+            OnMode.returnConfirmedHandler().sendEmptyMessage(0);
     }
 }
 
