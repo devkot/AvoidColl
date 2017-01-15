@@ -40,8 +40,7 @@ public class LightService extends Service implements SensorEventListener{
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        // grab the values and timestamp -- off the main thread
-        //long timestamp = event.timestamp;
+        // grab the values off the main thread
         valuel = event.values[0];//save values
         LightTask = new LightSensorEventLoggerTask().execute(event);//pass to async task to publish
         // stop the service
@@ -51,8 +50,6 @@ public class LightService extends Service implements SensorEventListener{
     private class LightSensorEventLoggerTask extends AsyncTask<SensorEvent, Void, Void> {
         @Override
         protected Void doInBackground(SensorEvent... events) {
-            //SensorEvent event = events[0];
-            // log the value
             Publisher.main(String.valueOf((valuel))+"/"
                     +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),"Light",MainActivity.DeviceID);
             return null;

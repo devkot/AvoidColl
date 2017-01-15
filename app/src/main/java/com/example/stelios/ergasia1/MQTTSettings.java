@@ -13,7 +13,7 @@ public class MQTTSettings extends AppCompatActivity{
     TextView textViewmqtt;
     EditText edittext;
     Button btn;
-    static String str="tcp://192.168.1.9:1883";
+    static String str="tcp://192.168.1.9:1883";//default IP
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +34,6 @@ public class MQTTSettings extends AppCompatActivity{
             }
         });
     }
-
-
-
-
 
     @Override
     protected void onResume() {

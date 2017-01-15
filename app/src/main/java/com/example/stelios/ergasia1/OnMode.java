@@ -32,7 +32,6 @@ import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.location.LocationListener;
 
 
 //google settings api documentation
@@ -141,7 +140,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
-                if (isChecked) {
+                if (isChecked) { //on checked switch start transmission
                     Intent intent3 = new Intent(getApplicationContext(), SubService.class);
                     startService(intent3);
                     Intent intent1 = new Intent(getApplicationContext(), ProximityService.class);
@@ -152,7 +151,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
                     startService(intent);
                     flag=true;
 
-                } else {
+                } else { // stop transmission
                     if(flag) {
                         stopService(new Intent(getApplicationContext(), AccelerationService.class));
                         stopService(new Intent(getApplicationContext(), LightService.class));
@@ -165,8 +164,7 @@ public class OnMode extends AppCompatActivity implements GoogleApiClient.Connect
             }
         });
 
-
-    }//oncreate end
+    }
 
     public static Handler returnHandler(){ //return handler
         return hm;

@@ -32,13 +32,11 @@ public class AccelerationService extends Service implements SensorEventListener 
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-        // do nothing
     }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        // grab the values and timestamp -- off the main thread
-        //long timestamp = event.timestamp;
+        // grab the values off the main thread
         valuex = event.values[0]; valuey=event.values[1]; valuez=event.values[2];//save values
 
         AccTask = new SensorEventLoggerTask().execute(event);//pass to async task to publish
@@ -49,8 +47,6 @@ public class AccelerationService extends Service implements SensorEventListener 
     private class SensorEventLoggerTask extends AsyncTask<SensorEvent, Void, Void> {
         @Override
         protected Void doInBackground(SensorEvent... events) {
-            //SensorEvent event = events[0];
-            // log the value
             Publisher.main(String.valueOf((valuex))+"/"+String.valueOf((valuey))+"/"+ String.valueOf((valuez))+"/"
                     +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),
                     "Acceleration",
@@ -61,7 +57,7 @@ public class AccelerationService extends Service implements SensorEventListener 
 
     }
     public boolean stopService(Intent name) {
-        AccTask.cancel(true);
+        AccTask.cancel(true);//stop task
         return super.stopService(name);
     }
 

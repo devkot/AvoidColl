@@ -31,13 +31,10 @@ public class ProximityService extends Service implements SensorEventListener{
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-        // do nothing
     }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        // grab the values and timestamp -- off the main thread
-        //long timestamp = event.timestamp;
         valuep = event.values[0];//save values
         ProxTask = new ProximitySensorEventLoggerTask().execute(event);//pass to async task to publish
         // stop the service
@@ -47,8 +44,6 @@ public class ProximityService extends Service implements SensorEventListener{
     private class ProximitySensorEventLoggerTask extends AsyncTask<SensorEvent, Void, Void> {
         @Override
         protected Void doInBackground(SensorEvent... events) {
-            //SensorEvent event = events[0];
-            // log the value
             Publisher.main(String.valueOf((valuep))+"/"
                     +String.valueOf(OnMode.latitude)+"/"+String.valueOf(OnMode.longitude),"Proximity",MainActivity.DeviceID);
             return null;
