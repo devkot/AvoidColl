@@ -75,10 +75,12 @@ public class Subscriber implements MqttCallback{
                 "  Message:\t" + new String(message.getPayload()) +
                 "QoS:\t" + message.getQos());
         Looper.prepare();
-        if(topic==("Acceleration/Danger/"+clientId) || topic == ("Proximity/Danger"+"/"+clientId) || topic == ("Light/Danger"+"/"+clientId))
+        if(topic==("Acceleration/Danger"+"/"+clientId) || topic == ("Proximity/Danger"+"/"+clientId) || topic == ("Light/Danger"+"/"+clientId)) {
             OnMode.returnHandler().sendEmptyMessage(0);//show toast
-        else if (topic == ("Acceleration/Confirmed"+"/"+clientId) || topic == ("Proximity/Confirmed"+"/"+clientId) || topic == ("Light/Confirmed"+"/"+clientId))
+        }
+        if (topic == ("Acceleration/Confirmed"+"/"+clientId) || topic == ("Proximity/Confirmed"+"/"+clientId) || topic == ("Light/Confirmed"+"/"+clientId)) {
             OnMode.returnConfirmedHandler().sendEmptyMessage(0);//show confirmed message
+        }
     }
 }
 
