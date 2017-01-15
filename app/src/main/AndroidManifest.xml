@@ -77,7 +77,7 @@
         <service
             android:name=".SubService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true"/>
     </application>
 
 </manifest>
