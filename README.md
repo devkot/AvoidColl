@@ -1,4 +1,4 @@
-This project was developped by me for a project in University of Athens.
+This project was developped for a project in University of Athens.
 
 Android Application used to determine collision when placed in front of the user. The point of this app is to determine collisions through 3 sensors found in android devices (Linear Acceleration, Light sensor, Proximity sensor). Real time measurements take place to check if the thresholds are surpassed and then alert the user with sound and text warnings. It is built to work in offline mode and do the calculations locally but it was also extended to go online and connect to an MQTT broker (mosquitto) which hosts the server with a Java application to control the data and control many devices simultaneously. In short:
 
