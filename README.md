@@ -1,89 +1,9 @@
-*******Ολοκληρωμενο README υπαρχει στο repository του JAVA PROJECT οπως ζητηθηκε***************
+This project was developped by me for a project in University of Athens.
 
-
-Android App
+Android Application used to determine collision when placed in front of the user. The point of this app is to determine collisions through 3 sensors found in android devices (Linear Acceleration, Light sensor, Proximity sensor). Real time measurements take place to check if the thresholds are surpassed and then alert the user with sound and text warnings. It is built to work in offline mode and do the calculations locally but it was also extended to go online and connect to an MQTT broker (mosquitto) which hosts the server with a Java application to control the data and control many devices simultaneously. In short:
 
 Offline Mode:
-
--Η εφαρμογη ξεκιναει κανονικα οπως υλοποιηθηκε για το πρωτο παραδοτεο. Στην κεντρικη οθονη φαινονται οι μετρησεις απο τους 3 αισθητηρες που 
-χρησιμοποιησαμε (Linear acceleration, Proximity, Light). 
-
--Οταν ξεπερνουνται τα κατωφλια εμφανιζεται heads up notification με ηχο και δονηση και εξαφανιζεται οταν δεν υπαρχει κινδυνος. To notification μπορει
-να πατηθει οταν ειμαστε στο homescreen και μας πηγαινει πισω στην εφαρμογη μεσω pending intent.
-
--Η οθονη δεν σβηνει οσο ειμαστε στην κεντρικη οθονη της εφαρμογης.
-
--Μπορουμε να κανουμε exit μεσω του back button μεσω διαλογου η αμεσως απο το μενου.
-
--Υπαρχουν 2 διαφορετικα ειδη ρυθμισεων.
-
--Με το Delay Settings καθοριζουμε την συχνοτητα ανανεωσης των τιμων αλλα και του ελεγχου των αισθητηρων.
-
--Με το Settings αλλαζουμε το κατωφλι του acceration Και του light μεσω seekbar.
-
--Γινεται ελεγχος για το αν η συσκευη μας εχει τους συγκεκριμενους αισθητηρες.
-
--Οι μετρησεις δεν σταματανε οταν κλεισει η οθονη
+Home screen shows the sensors' data in a text view and also contains a menu to access the settings and change the frequency and the thresholds of the sensors. Also, the collision message is shown through a heads-up notification that can be clicked to return to the app's main screen. 
 
 Online Mode:
-
--Τροποι μεταβασης σε online mode: Ανοιγμα wifi, απο το μενου επιλεγοντας το online mode η εχοντας ανοιχτο το wifi και μετα ανοιγοντας την εφαρμογη.
-
--Υπαρχει ενας broadcast receiver που ελεγχει αν ειναι ανοιχτο το wifi μονο και οχι το gps και αν ανοιξει μας πηγαινε στο online mode.
-
--Αν ειμαστε online και κλεισει το wifi τερματιζει και η εφαρμογη και επιστρεφουμε στο offline.
-
--Γινεται ελεγχος αν ειναι ανοιχτο το wifi και το gps και εμφανιζεται καταλληλο toast.
-
--Αν ειναι κλειστο το wifi ανοιγει αυτοματα ενω αν ειναι κλειστο το gps εμφανιζεται διαλογος με τη χρηση του google api.
-
--Υπαρχει κουμπι στο menu για MQTT settings δηλαδη να αλλαξουμε την IP/port που συνδεεται η συσκευη.
-
--Υπαρχει switch που ξεκιναει τη μεταδοση των δεδομενων του αισθητηρα.
-
--Υπαρχει κουμπι στο μενου για να μεταβουμε στο offline mode και κλεινει το wifi.
-
--Αλλιως μεσω του back button εμφανιζεται διαλογος κλεινει το Wifi και επιστρεφουμε στο Offline.
-
--Τις μετρησεις τις παιρνουμε μεσω ενος service και μεσα στην Onsensorchanged καλουμε asynctask για να μην υπαρχει συμφορηση. (το πιο κρισιμο σημειο της ασκησης)
-
--Καθε αισθητηρας υλοποιειται σε ξεχωριστη κλαση.
-
--Ο subscriber κανει subscribe σε συγκεκριμενα topics Που εχουν οριστει απο μας και συμφωνηθει με τον σερβερ.
-
--O publisher κανει publish στα topics id/sensor.
-
--Μεταφερεται επισης η τοποθεσια GPS αν και συνηθως ειναι 0.0 η null αφου ειμαστε πιο συχνα μεσα σε ενα κτηριο.
-
--Παιρνουμε την τοποθεσια GPS μεσω google api.
-
-Επεξηγηση κλασεων:
-
--AccelerationService,ProximityService,LightService ειναι τα service που ξεκινανε με intent μεσα απο το switch, κανουν register τους listeners και
-περνανε τις τιμες του αισθητηρα σε ενα AsyncTask Που θα κανει publish στο background για να μην "Κολλαει" η εφαρμογη.
-
--SubService ειναι το service που καλει τον subscriber.
-
--DelaySettings ειναι η κλαση που περιεχει τα spinners για να ελενξουμε την συχνοτητα που παιρνουμε τιμες στους αισθητηρες.
-
--Init ξεκιναει τον receiver.
-
--Connectivity receiver ειναι ενας broadcast receiver που ελενχει ΜΟΝΟ αν το Wifi ειναι ανοιχτο/κλειστο και προβαινει μετα σε αντιστοιχες ενεργειες. 
-
-
-***Θεωρησαμε τη συνθηκη της καταστασης GPS εναντια στα δεδομενα του παραδοτεου ως μη χρησιμη καθως το gps δεν μπορει να απενεργοποιηθει οπως το Wifi και 
-οχι τοσο σημαντικο στην λειτουργια της εφαρμογης αρα δεν ελεγχεται αν ειναι ανοιχτο ωστε να μεταβει σε online mode αλλα ΠΑΝΤΑ ζηταει στον χρηστη να το ανοιγει.
-
--MainActivity περιεχει των κωδικα της κεντρικης οθονης που εξεταστηκε στο πρωτο παραδοτεο και επεκταθηκε για να κανει unregister listeners οταν πηγαινουμε
-στο Online Mode ωστε να μην πραγματοποιειται τοπικος ελεγχος.
-
--Publisher απο το eclass με καποιες μικρες αλλαγες κυριως στο content,topics.
-
--OnMode ειναι η κυρια οθονη του Online κομματιου και περιερχει το μενου για τις online ρυθμισεις η την εξοδο. Ελεγχει αν ειναι ανοιχτο το Wifi/GPS και
-αν οχι τα ανοιγει. Switch για συνδεση και μεταδοση με MQTT broker. Με backbutton κλεινει και επιστρεφει στο offline.
-
--Subscriber στο messagearrived εχει μια switch για να ελενξει σε ποιον αισθητηρα ανοικει το μηνυμα που σταλθηκε και μεσω handler επειδη τρεχει στο background
-καλει toast που δειχνει τον κινδυνο στον χρηστη.
-
-
-
+All offline calculations stop during online mode and WiFi and GPS are turned on. There are available settings to configue the broker's IP and port and a button to start transmission. When the thresholds are surpassed the server sends a toast back to the device. The server handles all the load of the android device thus making it more reliable while also informing the user if there is a chance for collision with another user.
